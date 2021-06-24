@@ -1,0 +1,213 @@
+@use "colors";
+
+body {
+  background-color: colors.$grey;
+  margin: 0;
+  color: colors.$blue-002;
+
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+h1, h2 {
+  font-family: "Arial Black";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a, button, .button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.opsarh-blue-bg {
+  background-color: colors.$opsarh-bg-03;
+  color: colors.$white;
+}
+
+.opsarh-purple-bg {
+  background-color: colors.$opsarh-bg-02;
+  color: colors.$white;
+}
+
+.opsarh-purple-light-bg {
+  background-color: colors.$opsarh-bg-04;
+  color: colors.$white;
+}
+
+.opsarh-green-bg {
+  background-color: colors.$opsarh-bg-01;
+  color: colors.$white;
+}
+
+.opsarh-green-light-bg {
+  background-color: colors.$opsarh-bg-05;
+  color: colors.$white;
+}
+
+.dark-blue-bg {
+  background-color: colors.$blue-002;
+  color: colors.$white;
+}
+
+.purple-bg {
+  background-color: #4C2F70;
+  color: colors.$white;
+}
+
+.white-bg {
+  background-color: colors.$white;
+  color: colors.$blue-002;
+}
+
+.light-blue-bg {
+  background-color: lighten(colors.$blue-001, 30);
+  color: colors.$white;
+}
+
+.sky-blue-bg {
+  background-color: lighten(colors.$blue-001, 50);
+  color: colors.$white;
+}
+
+.grey-bg {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.city-bg {
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #0A2368;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
+.cool-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/cool-background.png");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
+.serv-tecno-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/fiber.webp");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
+.serv-propie-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/property.webp");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
+.serv-operaci-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/upgrade.webp");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
+.serv-instala-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/cafe.webp");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
+.serv-ambien-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/ambient.webp");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
+.empresa-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/mainoffice.webp");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
+.index-hero-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/workspace.webp");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+
+}
+
+.maroon-bg {
+  background-color: colors.$maroon;
+  color: colors.$white;
+}
+
+.maroon-light-bg {
+  background-color: lighten(colors.$maroon, 30);
+  color: colors.$white;
+}
+
+.image {
+  max-width: 100%;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.button-group {
+  text-align: center;
+}
+
+.svg-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}

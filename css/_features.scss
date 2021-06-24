@@ -1,0 +1,47 @@
+@use 'fonts';
+@use 'colors';
+@use 'variables';
+
+.features-block {
+  padding: 70px 0;
+
+  .image {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .sub-features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &.icons {
+    img {
+      width: 150px;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+
+  .col-sm {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: variables.$size-m) {
+    .title {
+      padding-bottom: 20px;
+    }
+    .col-sm {
+      margin-bottom: 0;
+    }
+    .image {
+      margin-bottom: 20px;
+    }
+  }
+}

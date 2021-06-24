@@ -1,0 +1,50 @@
+@use 'colors';
+
+$backgroundColor: darken(colors.$white, 10%);
+$borderColor: darken(colors.$border, 10%);
+
+#contact-modal {
+  .modal-content {
+    background-color: $backgroundColor;
+  }
+
+  .modal-header {
+    border-bottom-color: $borderColor;
+  }
+
+  .modal-footer {
+    justify-content: center;
+  }
+
+  .contact-info {
+    .icon {
+      width: 50px;
+      height: 50px;
+      margin-right: 12px;
+    }
+  }
+
+  .modal-separator {
+    position: relative;
+    text-align: center;
+    border-top: $borderColor 1px solid;
+    .text {
+      position: absolute;
+      top: -12px;
+      background-color: $backgroundColor;
+      padding: 0 8px;
+    }
+  }
+
+  .buttons {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.75rem;
+
+    .btn {
+      margin: .25rem;
+    }
+  }
+}

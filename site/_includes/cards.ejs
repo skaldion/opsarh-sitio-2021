@@ -1,0 +1,32 @@
+<section class='cards-section <%- additionalClasses %>'>
+    <div class='container'>
+        <div class='row'>
+            <div class='col'><h2><%- mainText %></h2></div>
+        </div>
+        <% if (secondaryText) { %>
+            <div class='row mb-4'>
+                <div class='col'><p><%- secondaryText %></p></div>
+            </div>
+        <% } %>
+        <div class='row'>
+    <% cards.forEach(data => {%>
+        <div class='col-md-4'>
+            <% if(data.href) { %> <a href='<%- data.href %>'> <% } %>
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" alt="<%- data.imgAlt %>" style="height: 225px; width: 100%; display: block;" src="<%- data.imgSrc %>">
+                <div class="card-body">
+                    <h4><%- data.title %></h4>
+                    <p class="card-text"><%- data.description %></p>
+                </div>
+            </div>
+            <% if(data.href) { %> </a> <% } %>
+        </div>
+    <%});%>
+        </div>
+        <% if (!noButton) { %>
+            <div class='button-group'>
+                <a class='btn btn-primary' href='<%- ctaHref%>'><%- ctaButtonText %></a>
+            </div>
+        <% }%>
+    </div>
+</section>

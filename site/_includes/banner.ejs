@@ -1,0 +1,27 @@
+<section class="banner-section <%- additionalClasses %>">
+    <div class="container">
+        <div class="row">
+            <div class='col'>
+                <h3><%- mainText %></h3>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-10'>
+                <% secondaryText.forEach((text) => { %>
+                    <p><%- text %></p>
+                <% }); %>
+            </div>
+            <div class='col-md-2'>
+                <% if (!href) {%>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contact-modal">
+                        <%- ctaButtonText %>
+                    </button>
+                <% } else { %>
+                    <a href='<%- href %>' class="btn btn-primary">
+                        <%- ctaButtonText %>
+                    </a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</section>

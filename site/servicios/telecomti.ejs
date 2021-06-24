@@ -1,0 +1,67 @@
+---
+title: 'Telecom y T.I.'
+permalink: 'servicios/telecomti/index.html'
+description: 'No queremos que tu información más valiosa esté vulnerable, por eso te ofrecemos nuestro expertise en tecnologías de la información'
+href: '/servicios/telecomti'
+imgAlt: 'Cuarto de servidores.'
+imgSrc: '/images/cabling.webp'
+order: 5
+---
+<%- include('/hero', {
+mainText: 'Telecomunicaciones y tecnologías de la información',
+secondaryText: [
+'Cuidamos la base de datos y software de tu empresa cómo si fuera la nuestra.',
+''
+],
+ctaButtonText: 'Contáctanos',
+additionalClasses: 'serv-tecno-bg'
+})
+%>
+
+<%- include('/side-image', {
+heading: 'Mantente comunicado',
+image: { src: '/images/cables.webp', alt: 'Las conexiones LAN y su modem.' },
+features: [
+{ title: '', description: 'Estos servicios están relacionados con elementos de base de datos en su estructura, que van desde cableado para elementos de voz y datos. Contamos con una gran oferta de equipos de cómputo, desarrollo de proyectos de esta categoría en nuevas instalaciones o actualización de los elementos que puedan requerir una.' },
+{ title: '', description: 'En resumen, aquí podemos encontrar servicios relacionados con el software de las máquinas de trabajo y el cableado de los edificios.' },
+],
+additionalClasses: 'light-blue-bg',
+imgClasses: ""
+})
+%>
+
+<%- include('/grid', {
+mainText: '',
+elements: [
+{ htmlContent: '<h3>Actualizado</h3><p>Siempre contarás con las últimas versiones de todos los programas de paquetería que necesites para tu empresa.</p>'},
+{ htmlContent: '<h3>Confidencialidad</h3><p>La red interna de tu empresa estará cuidada y tu información confidencial cuidada.</p>'},
+{ htmlContent: '<h3>Automatización</h3><p>Podrás contar con un espacio totalmente automatizado e inteligente haciendo más eficiente el trabajo.</p>'},
+],
+additionalClasses: 'grey-bg'
+})
+%>
+
+<%- include('/cta', {
+mainText: 'opsarh, expertos en facility services',
+secondaryText: [
+'No queremos que tu información más valiosa esté vulnerable por eso te ofrecemos nuestro expertise en tecnologías de la información. '
+],
+ctaButtonText: 'Contáctanos!',
+additionalClasses: 'maroon-bg',
+noButton: false,
+    href: ''
+})
+%>
+
+<%- include('/servicios') %>
+
+<%- include('/banner', {
+mainText: 'Sanitización de espacios',
+secondaryText: [
+'Estemos en situación de emergencia sanitaria o no, la sanitización de espacios debe ser una prioridad de todas las empresas para evitar problemas de salud en colaboradores y clientes. '
+],
+ctaButtonText: 'Leer más',
+additionalClasses: 'opsarh-purple-bg',
+    href:'/blog/pandemia'
+})
+%>

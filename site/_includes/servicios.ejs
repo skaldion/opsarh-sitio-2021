@@ -1,0 +1,10 @@
+<%- include('/cards', {
+mainText: 'Servicios',
+secondaryText: 'Nuestros servicios se dividen en 5 cluster que van desde actividades soft hasta las hard. Generamos un mantenimiento que llega desde el corporativo hasta el corazón de tu maquinaria o planta. Creando un espacio de trabajo: limpio, con temperatura adecuada, seguro en ambiente eléctrico, mecánico, con las mejores recomendaciones tecnológicas y atendiendo cualquier necesidad de servicio que se requiera.',
+cards: collections.sortedServices.map(servicio => servicio.data),
+noButton: false,
+ctaButtonText: 'Cotizar ahora',
+    ctaHref: '/cotizaciones',
+additionalClasses: 'grey-bg'
+})
+%>

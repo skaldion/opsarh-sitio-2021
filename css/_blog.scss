@@ -1,0 +1,33 @@
+@use 'fonts';
+@use 'colors';
+
+.blog {
+  padding: 50px 0;
+  background-color: white;
+
+  h2, h3 {
+    margin-bottom: 20px;
+  }
+
+  .header {
+    margin-bottom: 30px;
+    .secondary {
+      color: colors.$grey-003;
+      font-size: 14px;
+    }
+  }
+
+  .blog-post {
+    img {
+      max-width: 100%;
+      border-radius: 4px;
+      box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+    }
+  }
+
+  .blog-previews {
+    .cards-section {
+      padding: 0;
+    }
+  }
+}

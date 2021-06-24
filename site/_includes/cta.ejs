@@ -1,0 +1,25 @@
+<section class="cta-block <%- additionalClasses %>">
+    <div class="container">
+        <div class="hero-message">
+            <h2><%- mainText %></h2>
+            <% secondaryText.forEach((text) => { %>
+                <p><%- text %></p>
+            <% }); %>
+            <% if (!noButton) {%>
+                <div class='button-group'>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contact-modal">
+                        <%- ctaButtonText %>
+                    </button>
+                </div>
+            <% } %>
+            <% if (href) {%>
+                <div class='button-group'>
+                    <a href='<%- href %>' class="btn btn-primary">
+                        <%- ctaButtonText %>
+                    </a>
+                </div>
+            <% } %>
+
+        </div>
+    </div>
+</section>

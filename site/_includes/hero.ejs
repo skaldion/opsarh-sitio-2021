@@ -1,0 +1,13 @@
+<section class="hero <%- additionalClasses %>">
+    <div class="container">
+        <div class="hero-message">
+            <h1><%- mainText %></h1>
+            <% secondaryText.forEach((text) => { %>
+                <p><%- text %></p>
+            <% }); %>
+        </div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contact-modal">
+            <%- ctaButtonText %>
+        </button>
+    </div>
+</section>

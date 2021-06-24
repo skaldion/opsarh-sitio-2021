@@ -1,0 +1,66 @@
+---
+title: 'Servicios Ambientales'
+permalink: 'servicios/ambientales/index.html'
+description: '¿No sabes qué hacer con tus residuos? opsarh lo recoleta y transforma'
+href: '/servicios/ambientales'
+imgAlt: 'Tres montones de cartón reciclables.'
+imgSrc: '/images/recycle.webp'
+order: 2
+---
+<%- include('/hero', {
+mainText: 'Servicios Ambientales',
+secondaryText: [
+'Ayudamos a tu empresa a ser socialmente responsable con el medio ambiente.'
+],
+ctaButtonText: 'Contáctanos',
+additionalClasses: 'serv-ambien-bg'
+})
+%>
+
+<%- include('/side-image', {
+heading: 'Te quitamos un peso de encima',
+image: { src: '/images/garbage.webp', alt: 'Unos trabajadores cargando un camión de basura con varios objetos.' },
+features: [
+{ title: '', description: 'La administración de los residuos ya sea orgánicos, inorgánicos o de manejo especial son una preocupación constante dentro de corporativos o plantas de producción por lo que ofrecemos un servicio que nos permite dar  el tratamiento adecuado conforme a cada elemento que se considere deshecho, alineado a los aspectos ambientales que se requieran, e incluso aprovechando su venta para beneficio de todos como interesados en la cadena de custodia (reciclaje y administración de residuos) y manejo de estos elementos. ' },
+{ title: '', description: '' },
+],
+additionalClasses: 'light-blue-bg',
+imgClasses: ""
+})
+%>
+
+<%- include('/grid', {
+mainText: '',
+elements: [
+{ htmlContent: '<h3>Responsable</h3><p>Te ayuda a obtener de una manera más rápida las certificaciones de empresa socialmente responsables con el medio ambiente.</p>'},
+{ htmlContent: '<h3>Protege</h3><p>Cumples con los objetivos de la agenda 2030 en materia de protección ambiental.</p>'},
+{ htmlContent: '<h3>Reusa</h3><p>Puedes obtener un segundo uso de tus insumos a través de su reciclaje.</p>'},
+],
+additionalClasses: 'grey-bg'
+})
+%>
+
+<%- include('/cta', {
+mainText: 'opsarh, expertos en facility services',
+secondaryText: [
+'¿Quieres obtener una certificación de empresa socialmente responsable o amigable con el medio ambiente? Te ayudamos a hacerlo, Contáctanos.'
+],
+ctaButtonText: 'Contáctanos!',
+additionalClasses: 'opsarh-purple-bg',
+noButton: false,
+    href: ''
+})
+%>
+
+<%- include('/servicios') %>
+
+<%- include('/banner', {
+mainText: 'Sanitización de espacios',
+secondaryText: [
+'En opsarh sabemos la importancia de proteger a nuestros clientes aliados por eso ante la situación creada por la emergencia sanitaria hemos reforzado nuestros protocolos de seguridad para cuidar de ti y los tuyos.'
+],
+ctaButtonText: 'Leer más',
+additionalClasses: 'opsarh-green-light-bg',
+href: '/blog/pandemia'
+})
+%>

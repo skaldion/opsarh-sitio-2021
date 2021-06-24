@@ -1,0 +1,10 @@
+<%- include('/cards', {
+mainText: 'Blog',
+secondaryText: '',
+cards: collections.latestPosts.map(item => item.data),
+noButton: true,
+ctaButtonText: '',
+    ctaHref: '',
+additionalClasses: 'grey-bg'
+})
+%>

@@ -1,0 +1,13 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+    David Orduna -- Front-end dev and design
+    Diego Orduna -- Front-end dev
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    11ty
+    jQuery
+    Bootstrap

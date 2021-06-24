@@ -1,0 +1,47 @@
+@use 'fonts';
+@use 'colors';
+@use 'variables';
+
+.hero-video {
+  min-height: 500px;
+  padding: 70px 0;
+  h1 {
+    font-weight: bold;
+    font-size: 57px;
+    line-height: 60px;
+    margin-bottom: 40px;
+  }
+  p {
+    font-size: 21px;
+  }
+
+  .video-thumbnail {
+    width: 350px;
+  }
+
+  .hero-message {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .cta-button {
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  @media (min-width: variables.$size-m) {
+    .hero-message {
+      max-width: 550px;
+    }
+  }
+
+  @media (min-width: variables.$size-l) {
+    padding: 100px 0;
+    .hero-message {
+      max-width: 1000px;
+      p {
+        max-width: 550px;
+      }
+    }
+  }
+}

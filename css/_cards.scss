@@ -1,0 +1,28 @@
+@use 'fonts';
+@use 'colors';
+
+.cards-section {
+  padding: 50px 0;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    border-style: none;
+    box-shadow: none;
+  }
+
+  .card {
+    transition: all .2s ease-in-out;
+    &:hover {
+      color: colors.$white;
+      background-color: colors.$blue-003;
+      transform: scale(1.01);
+    }
+  }
+
+}

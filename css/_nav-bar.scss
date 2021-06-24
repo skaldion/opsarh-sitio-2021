@@ -1,0 +1,120 @@
+@use 'colors';
+
+.navigation-bar-top {
+  background-color: white;
+  .navigation-container {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    background-color: white;
+  }
+
+  .navigation-logo, .navigation-item, .navigation-item a{
+    color: colors.$blue-002;
+    transition: color 0.2s ease;
+    &:hover {
+      color: colors.$blue-003;
+      text-decoration: none;
+    }
+  }
+
+  .dropdown-item {
+    color: colors.$blue-002;
+    transition: color 0.2s ease;
+    padding: 0.25rem 0;
+    margin: 0 1.5rem;
+    width: auto;
+    &.active, &:active {
+      color: colors.$blue-004;
+      background-color: transparent;
+      border-bottom: 3px solid colors.$blue-004;
+      &:hover {
+        color: lighten(colors.$blue-004, 10%);
+        border-bottom-color: lighten(colors.$blue-004, 10%);
+      }
+    }
+    &:hover {
+      color: colors.$blue-003;
+      text-decoration: none;
+    }
+  }
+
+  button {
+    margin: 0 .5rem;
+  }
+
+  .separator-bottom {
+    border-bottom: 1px solid colors.$grey-001;
+    padding: 12px 0;
+  }
+
+  .navigation-logo {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
+
+  .navbar-collapse {
+    flex-grow: unset;
+  }
+
+  .navigation-item {
+    padding: .5rem 0;
+    a {
+      padding: 6px 0;
+    }
+
+    &.active {
+      a {
+        color: colors.$blue-004;
+        border-bottom-style: solid;
+        border-bottom-color: colors.$blue-004;
+        transition: border-bottom-color 0.2s ease;
+      }
+
+      &:hover {
+        a {
+          color: lighten(colors.$blue-004, 10%);
+          border-bottom-color: lighten(colors.$blue-004, 10%);
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &.navbar {
+      padding: 1rem;
+    }
+
+    .navigation-item {
+      padding: .5rem 0;
+
+      a {
+        margin: 0 0.5rem;
+        &.active {
+          color: colors.$blue-004;
+          border-bottom-style: solid;
+          border-bottom-color: colors.$blue-004;
+          transition: border-bottom-color 0.2s ease;
+          &:hover {
+            color: lighten(colors.$blue-004, 10%);
+            border-bottom-color: lighten(colors.$blue-004, 10%);
+          }
+        }
+      }
+    }
+  }
+  .logo{
+    width:70px;
+  }
+}

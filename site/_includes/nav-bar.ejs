@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light navigation-bar-top">
+    <div class='container'>
+        <a class="navbar-brand navigation-logo" href="<%- buildTime.siteURL %>"><img src="/images/opsarh3.png" class='logo'/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerTop" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerTop">
+            <ul class="navbar-nav mt-lg-0">
+                <% collections.pages.forEach(function (navPage) { %>
+                    <% if(!navPage.data.hideInNav) { %>
+                        <li class='nav-item navigation-item'>
+                            <a class="<%- ` ${page.url === navPage.url && 'active'}` %>"
+                               href="<%- navPage.url %>">
+                                <%= navPage.data.title %>
+                            </a>
+                        </li>
+                    <% } %>
+                <% });%>
+                    <span class="text-muted separator-bottom d-md-none d-lg-none">Servicios</span>
+                    <% collections.sortedServices.forEach( servicio => { %>
+                        <li class='nav-item navigation-item d-md-none d-lg-none <%- ` ${page.url === servicio.url && 'active'}` %>'>
+                            <a href="<%- servicio.url %>">
+                                <%= servicio.data.title %>
+                            </a>
+                        </li>
+                    <% }); %>
+            </ul>
+            <div class="btn-group d-none d-md-block">
+                <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Servicios
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <% collections.servicios.forEach( servicio => { %>
+                        <a class="dropdown-item <%- ` ${page.url === servicio.url && 'active'}` %>" href="<%- servicio.url %>"><%- servicio.data.title %></a>
+                    <% }); %>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-primary d-none d-md-block" data-toggle="modal" data-target="#contact-modal">
+                Contacto
+            </button>
+        </div>
+    </div>
+</nav>

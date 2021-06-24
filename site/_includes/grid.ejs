@@ -1,0 +1,16 @@
+<section class='grid-section <%- additionalClasses %>'>
+    <div class='container'>
+        <% if (mainText) {%>
+        <div class='row'>
+            <div class='col'><h2><%- mainText %></h2></div>
+        </div>
+        <% } %>
+        <div class='row'>
+    <% elements.forEach(data => {%>
+        <div class='col-md'>
+            <%- data.htmlContent %>
+        </div>
+    <%});%>
+        </div>
+    </div>
+</section>

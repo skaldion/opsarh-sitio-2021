@@ -1,0 +1,67 @@
+---
+title: 'Administración de las Propiedades'
+permalink: 'servicios/propiedades/index.html'
+description: '¿Necesitas un espacio nuevo? ¿Buscas adecuarte a la nueva normalidad en cuanto a espacio? Contáctanos, tenemos el spot perfecto'
+href: '/servicios/propiedades'
+imgAlt: 'El pasillo de una empresa con vista a una de las oficinas.'
+imgSrc: '/images/remodel.webp'
+order: 3
+---
+<%- include('/hero', {
+mainText: 'Administración de las propiedades',
+secondaryText: [
+'Nos encargamos de que tu espacio de trabajo cuente con todo lo necesario para un desempeño óptimo desde el primer día.',
+    ''
+],
+ctaButtonText: 'Contáctanos',
+additionalClasses: 'serv-propie-bg'
+})
+%>
+
+<%- include('/side-image', {
+heading: 'Cuidamos tus inmuebles',
+image: { src: '/images/building.webp', alt: 'Un edifico de oficinas con vista de abajo hacia arriba.' },
+features: [
+{ title: '', description: 'Tienen que ver con los inmuebles de la empresa ya sea en renta o en propiedad. Desde su planeación y diseño, pasando por la selección del mejor lugar para beneficiar a la empresa hasta la construcción y armado de las oficinas con todas las necesidades cubiertas (voz y datos, muebles y acabados requeridos) , terminando con mantener los espacios de trabajo  en un estado óptimo ayudando a tener un mejor ambiente de trabajo.' },
+{ title: '', description: 'Algunos de los servicios que se prestan aquí son: Remodelación y administración de espacios, relación positiva con el arrendador , revisión de instalaciones; entre otras.' },
+],
+additionalClasses: 'opsarh-blue-bg',
+imgClasses: ""
+})
+%>
+
+<%- include('/grid', {
+mainText: '',
+elements: [
+{ htmlContent: '<h3>Adaptable</h3><p>Contar con un espacio que se adapte a tus necesidades.</p>'},
+{ htmlContent: '<h3>Sencillez</h3><p>Nosotros nos encargamos de los temas burocráticos para no distraerte y optimizar tu trabajo.</p>'},
+{ htmlContent: '<h3>Planifica</h3><p>Con una revisión programada de tus equipos e instalaciones puedes planificar su vida de uso y sacarles el máximo rendimiento sin perder productividad.</p>'},
+],
+additionalClasses: 'grey-bg'
+})
+%>
+
+<%- include('/cta', {
+mainText: 'opsarh, expertos en facility services',
+secondaryText: [
+'Pasamos mucho tiempo en nuestro espacio de trabajo  y debes sentirte como en casa. En opsarh te ayudamos a lograrlo. '
+],
+ctaButtonText: 'Contáctanos!',
+additionalClasses: 'opsarh-green-bg',
+noButton: false,
+    href: ''
+})
+%>
+
+<%- include('/servicios') %>
+
+<%- include('/banner', {
+mainText: 'Sanitización de espacios',
+secondaryText: [
+'Estemos en situación de emergencia sanitaria o no, la sanitización de espacios debe ser una prioridad de todas las empresas para evitar problemas de salud en colaboradores y clientes. '
+],
+ctaButtonText: 'Leer más',
+additionalClasses: 'opsarh-purple-bg',
+href: '/blog/pandemia'
+})
+%>

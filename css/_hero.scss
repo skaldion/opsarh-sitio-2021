@@ -1,0 +1,65 @@
+@use 'fonts';
+@use 'colors';
+@use 'variables';
+
+.hero {
+  min-height: 500px;
+  padding: 70px 0;
+  h1 {
+    font-size: fonts.$hero-h1-size;
+    line-height: 60px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 21px;
+  }
+  &.blue {
+    background-attachment: local;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("/images/desktop.jpg");
+    background-color: colors.$softgray;
+    background-blend-mode: darken;
+    color: colors.$white;
+  }
+
+  &.update-bg {
+    background-attachment: local;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("/images/update.jpg");
+    background-color: colors.$softgray;
+    background-blend-mode: darken;
+    color: colors.$white;
+  }
+  &.ecommerce-bg {
+    background-attachment: local;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("/images/ecommerce.jpg");
+    background-color: colors.$softgray;
+    background-blend-mode: darken;
+    color: colors.$white;
+  }
+  .hero-message {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: variables.$size-m) {
+    .hero-message {
+      max-width: 550px;
+    }
+  }
+
+  @media (min-width: variables.$size-l) {
+    padding: 100px 0;
+    .hero-message {
+      max-width: 1000px;
+      p {
+        max-width: 550px;
+      }
+    }
+  }
+}

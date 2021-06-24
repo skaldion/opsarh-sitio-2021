@@ -1,0 +1,54 @@
+.navigation-bar-top {
+  background-color: white;
+  .navigation-container {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  background-color: white;
+}
+.navigation-logo, .navigation-item {
+color: colors.$blue-002;
+transition: color 0.2s ease;
+&:hover {
+color: colors.$blue-003;
+text-decoration: none;
+}
+}
+.navigation-logo {
+display: inline-block;
+padding-top: .3125rem;
+padding-bottom: .3125rem;
+margin-right: 1rem;
+font-size: 1.25rem;
+line-height: inherit;
+white-space: nowrap;
+text-transform: uppercase;
+}
+.navigation {
+display: flex;
+flex-direction: row;
+margin-left: auto;
+.navigation-item {
+padding: .5rem;
+text-transform: uppercase;
+
+&.active {
+color: colors.$white;
+background-color: colors.$blue-004;
+border-radius: 4px;
+transition: background-color 0.2s ease;
+
+&:hover {
+background-color: lighten(colors.$blue-004, 10%);
+}
+}
+}
+}
+img{
+box-shadow: none;
+}
+
+.logo{
+width:200px;
+}
+}

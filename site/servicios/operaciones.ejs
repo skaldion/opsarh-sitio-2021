@@ -1,0 +1,67 @@
+---
+title: 'Operaciones y Mantenimiento'
+permalink: 'servicios/operaciones/index.html'
+description: 'Cuidamos de tu maquinaria, sus partes y su tecnología  para que siempre te ofrezcan el mejor rendimiento, pregunta por nuestros servicios'
+href: '/servicios/operaciones'
+imgAlt: 'Un hombre soldando partes de maquinaria pesada.'
+imgSrc: '/images/maintenance.webp'
+order: 4
+---
+<%- include('/hero', {
+mainText: 'Administración y Mantenimiento a instalaciones de operaciones',
+secondaryText: [
+'Nos encargamos de que tu maquinaria y tecnología estén en perfecto estado para que no fallen en el momento menos deseado.'
+],
+ctaButtonText: 'Contáctanos',
+additionalClasses: 'serv-operaci-bg'
+})
+%>
+
+<%- include('/side-image', {
+heading: 'No te arriesgues',
+image: { src: '/images/tech.webp', alt: 'Una persona ajustando equipo técnico.' },
+features: [
+{ title: '', description: 'Estas actividades son clasificadas como hard y de no ser llevadas a cabo la cadena de suministro puede verse afectada, causando problemas que pueden tener un impacto económico en la empresa. También conocido como mantenimiento industrial, estas actividades son principalmente: ' },
+{ title: '', description: 'Sistemas de mantenimiento industrial, eléctrico, mecánico o especializado en los equipos que tenga la propia empresa. Sumado a los anteriores elementos de mejora a:' },
+{ title: '', description: '' },
+],
+additionalClasses: 'light-blue-bg',
+imgClasses: ""
+})
+%>
+
+<%- include('/grid', {
+mainText: '',
+elements: [
+{ htmlContent: '<h3>Producción</h3><p>Tu maquinaria siempre va a estar en el mejor estado para que la cadena de producción no se vea afectada y las pérdidas por desechos sean mínimas.</p>'},
+{ htmlContent: '<h3>Calidad</h3><p>Contarás con la mejor tecnología de acuerdo a tus prioridades y presupuesto sin dejar de lado la calidad.</p>'},
+{ htmlContent: '<h3>Sin sorpresas</h3><p>Con nuestro programa de revisión programada evitarás que el proceso se pare en el momento menos deseado.</p>'},
+],
+additionalClasses: 'grey-bg'
+})
+%>
+
+<%- include('/cta', {
+mainText: 'opsarh, expertos en facility services',
+secondaryText: [
+'Cuidamos de tu maquinaria para que siempre te ofrezca el mejor rendimiento, pregunta por nuestros servicios.'
+],
+ctaButtonText: 'Contáctanos!',
+additionalClasses: 'opsarh-purple-light-bg',
+noButton: false,
+    href:''
+})
+%>
+
+<%- include('/servicios') %>
+
+<%- include('/banner', {
+mainText: 'Sanitización de espacios',
+secondaryText: [
+'Estemos en situación de emergencia sanitaria o no, la sanitización de espacios debe ser una prioridad de todas las empresas para evitar problemas de salud en colaboradores y clientes.'
+],
+ctaButtonText: 'Leer más',
+additionalClasses: 'opsarh-purple-bg',
+    href:'/blog/pandemia'
+})
+%>

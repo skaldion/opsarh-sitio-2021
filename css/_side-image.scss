@@ -1,0 +1,48 @@
+@use 'fonts';
+@use 'colors';
+@use 'variables';
+
+.side-image-block {
+  padding: 70px 0;
+
+  img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .image {
+    text-align: center;
+  }
+
+  &.image-right {
+    img {
+      margin-bottom: 0;
+    }
+
+    .image {
+      order: 2;
+    }
+    .content {
+      order: 1;
+    }
+  }
+
+  @media (min-width: variables.$size-m) {
+
+  }
+
+  @media (min-width: variables.$size-l) {
+    img {
+      margin-bottom: 0;
+    }
+    .image {
+      text-align: left;
+    }
+    &.image-right {
+      .content {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}

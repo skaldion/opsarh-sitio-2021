@@ -1,0 +1,35 @@
+---
+layout: base.ejs
+---
+<section class='blog'>
+    <div class='container'>
+        <div class='row'>
+            <div class='blog-post col-md-8'>
+                <div class='header'>
+                    <h1><%- title %></h1>
+                    <div class='secondary'>Autor: <span><%- author %></span></div>
+                </div>
+                <%- content %>
+            </div>
+            <div class='blog-previews col-md-4'>
+                <div class='row'><div class='col'><h4>Más de nuestro blog:</h4></div></div>
+                <div class='row cards-section'>
+                    <% collections.blog.forEach(post => {%>
+                        <% if(page.url === post.data.page.url) { return; } %>
+                        <div class='col-md-12 col-sm-6'>
+                            <% if(post.data.href) { %> <a href='<%- post.data.href %>'> <% } %>
+                                <div class="card mb-4 box-shadow">
+                                    <img class="card-img-top" alt="<%- post.data.imgAlt %>" style="height: 225px; width: 100%; display: block;" src="<%- post.data.imgSrc %>">
+                                    <div class="card-body">
+                                        <h4><%- post.data.title %></h4>
+                                        <p class="card-text"><%- post.data.description %></p>
+                                    </div>
+                                </div>
+                                <% if(post.data.href) { %> </a> <% } %>
+                        </div>
+                    <%});%>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

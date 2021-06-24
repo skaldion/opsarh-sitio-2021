@@ -1,0 +1,56 @@
+@use 'fonts';
+@use 'colors';
+
+
+
+.cotizaciones-section {
+
+  .cotizacion-item {
+    display: block;
+    &.header {
+      background-color: #5a6268;
+      color: colors.$white;
+    }
+    .col {
+      padding-left: 2px;
+      padding-right: 2px;
+      &.descripcion {
+        max-width: 55%;
+      }
+      max-width: 15%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .cotizacion-item {
+      display: flex;
+      flex-direction: row;
+      .col {
+        &.descripcion {
+          max-width: 40%;
+        }
+        max-width: 20%;
+      }
+    }
+  }
+
+  .list-group-item {
+    padding: 0.75rem 1.9rem 0.75rem 1.25rem;
+    .close-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 10px 2px;
+      border-left: 1px solid colors.$grey-002;
+      border-bottom: 1px solid colors.$grey-002;
+      color: #6c757d;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &.empty {
+      color: #6c757d;
+    }
+  }
+}

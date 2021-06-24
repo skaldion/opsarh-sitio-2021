@@ -1,0 +1,90 @@
+---
+layout: base.ejs
+---
+
+<%- include('/hero', {
+mainText: 'opsarh',
+secondaryText: [
+'Somos una empresa de prestación de servicios enfocada en cada uno de los elementos de mantenimiento ya sea en oficinas corporativas o edificios industriales alrededor de la cadena de suministro.',
+],
+ctaButtonText: 'Contáctanos',
+additionalClasses: 'index-hero-bg'
+})
+%>
+
+<%- include('/banner', {
+mainText: 'Nuestra posición ante la pandemia',
+secondaryText: [
+'En opsarh sabemos la importancia de proteger a nuestros clientes aliados por eso ante la situación creada por la emergencia sanitaria hemos reforzado nuestros protocolos de seguridad para cuidar de tí y los tuyos.'
+],
+ctaButtonText: 'Leer más',
+additionalClasses: 'opsarh-purple-light-bg',
+href: '/blog/pandemia'
+})
+%>
+
+<%- include('/side-image', {
+heading: 'Integrated Facilities Management',
+image: { src: '/images/facility.webp', alt: 'Un ingeniero dándole mantenimiento al equipo industrial de la empresa.' },
+features: [
+{ title: '', description: 'Nuestro objetivo es ayudarte a tener un desempeño excelente manteniendo todos los insumos relacionados con la cadena de producción en perfecto estado.' },
+{ title: '', description: '' },
+],
+additionalClasses: 'opsarh-purple-bg',
+imgClasses: "order-2"
+})
+%>
+
+<%- include('/servicios') %>
+
+<%- include('/banner', {
+mainText: 'Sanitización de espacios',
+secondaryText: [
+'Estemos en situación de emergencia sanitaria o no, la sanitización de espacios debe ser una prioridad de todas las empresas para evitar problemas de salud en colaboradores y clientes.'
+],
+ctaButtonText: 'Leer más',
+additionalClasses: 'opsarh-green-light-bg',
+href: '/blog/pandemia'
+})
+%>
+
+<%- include('/side-image', {
+heading: 'Ventaja Competitiva',
+image: { src: '/images/ventajas.webp', alt: 'Un vistazo de abajo hacia arriba de unos edificios al atardecer.' },
+features: [
+{ title: 'Servicios a la medida', description: 'Ofrecemos a nuestro cliente un producto hecho a la medida de sus necesidades que va desde lo más específico hasta un servicio integral. Nos enfocamos en ofrecer resultados desde el primer momento a precios accesibles y competitivos sin descuidar la calidad.' },
+{ title: 'Empresa 100% mexicana', description: 'Somos una empresa 100% mexicana que conoce la cultura e idiosincrasia del trabajo requerido por cada cliente.' },
+],
+additionalClasses: 'opsarh-green-bg',
+imgClasses: ""
+})
+%>
+
+<%- include('/cards', {
+mainText: 'Historias de Éxito',
+secondaryText: '',
+cards: [
+{ imgAlt: 'Una mesa con diferentes tipos de solventes y pinturas.', imgSrc: '/images/paint.webp', title: 'Empresa de Pinturas y manejo de Solventes', description: ''},
+{ imgAlt: 'Una oficina con dieciocho cabinas y 18 sillas.', imgSrc: '/images/office.webp', title: 'Desarrollo en corporativo y adecuación', description: ''},
+{ imgAlt: 'Un motor de automóvil con partes nuevas.', imgSrc: '/images/engine.webp', title: 'Fabricante de Autos', description: ''},
+],
+noButton: true,
+ctaButtonText: 'Cotizar ahora',
+additionalClasses: 'grey-bg'
+})
+%>
+
+<%- include('/certificaciones') %>
+<%- include('/blog-latest') %>
+
+<%- include('/cta', {
+mainText: 'opsarh, expertos en facility services',
+secondaryText: [
+'Somos una empresa 100% dentro del sector enfocada en brindar servicios de facilities management. Conocemos cuáles son las necesidades del mercado y como atacarlas, más de xx años nos avalan.'
+],
+ctaButtonText: 'Contáctanos!',
+additionalClasses: 'light-blue-bg',
+noButton: false,
+href: ''
+})
+%>
