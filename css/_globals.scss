@@ -67,6 +67,19 @@ img {
   background-color: #4C2F70;
   color: colors.$white;
 }
+.opsarh-bblue-bg {
+  background-color: #00326d;
+  color: colors.$white;
+}
+
+.lightblue-opsarh-bg {
+  background-color: colors.$blue-005;
+  color: colors.$white;
+}
+.skyblue-opsarh-bg {
+  background-color: #2d76b2;
+  color: colors.$white;
+}
 
 .white-bg {
   background-color: colors.$white;
@@ -74,7 +87,7 @@ img {
 }
 
 .light-blue-bg {
-  background-color: lighten(colors.$blue-001, 30);
+  background-color: lighten(colors.$blue-005, 30);
   color: colors.$white;
 }
 
@@ -179,7 +192,7 @@ img {
   background-attachment: local;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("/images/workspace.webp");
+  background-image: url("/images/heroHome.jpg");
   background-color: colors.$softgray;
   background-blend-mode: darken;
   color: colors.$white;
