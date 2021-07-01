@@ -1,0 +1,71 @@
+---
+title: 'Estructura y Talento organizacional'
+permalink: 'servicios/estructura/index.html'
+description: 'Ofrecemos asesoría para el análisis y diagnóstico de la estructura organizacional con el fin de soportar las diferentes estrategias del negocio.'
+href: '/servicios/estructura'
+imgAlt: 'Icono estructura organizacional'
+imgSrc: '/images/estructura_talento.svg'
+order: 1
+---
+
+<%- include('/hero', {
+mainText: 'Estructura y Talento Organizacional',
+secondaryText: [
+'Ofrecemos asesoría para el análisis y diagnóstico de la estructura organizacional con el fin de soportar las diferentes estrategias del negocio. ',
+''
+],
+ctaButtonText: 'Contáctanos',
+additionalClasses: 'serv-estruct-bg'
+})
+%>
+
+<%- include('/side-image', {
+heading: 'Estructura y Talento',
+image: { src: '/images/estructura_talento.svg', alt: 'La sala común de una empresa con dos mujeres descansando.' },
+features: [
+{ title: '', description: 'Ofrecemos asesoría para el análisis y diagnóstico de la estructura organizacional con el fin de soportar las diferentes estrategias del negocio.' },
+{ title: '', description: 'Desarrollamos e implementamos programas de evaluación del desempeño que contribuyan tanto en los resultados de la empresa, como en el desarrollo de los empleados.  ' },
+],
+additionalClasses: 'skyblue-opsarh-bg',
+imgClasses: ""
+})
+%>
+
+<%- include('/grid', {
+mainText: '',
+elements: [
+{ htmlContent: '<h3>Diagnóstico</h3><p>Diagnóstico y evaluación de operación para todas las áreas de la organización.</p>'},
+{ htmlContent: '<h3>Desarrollo</h3><p>Desarrollo de programas de evaluación del desempeño.</p>'},
+{ htmlContent: '<h3>Creación</h3><p>Creación de planes de formación y desarrollo.</p>'},
+{ htmlContent: '<h3>Seguimiento</h3><p>Desarrollo y seguimiento a planes de mejora.</p>'},
+],
+additionalClasses: 'grey-bg'
+})
+%>
+
+<%- include('/cta', {
+mainText: 'opsarh, expertos en talento organizacional',
+secondaryText: [
+'¿Quieres generar un ambiente laboral sano? Nosotros te decimos cómo lograrlo.'
+],
+ctaButtonText: '¡Contáctanos!',
+additionalClasses: 'lightblue-opsarh-bg',
+noButton: false,
+href: ''
+})
+%>
+
+<%- include('/servicios') %>
+
+
+<%- include('/cta', {
+mainText: 'Todas las posibilidades en talento para tu organización',
+secondaryText: [
+'Sabemos que cada organización desde la más pequeña hasta el corporativo más grande tiene distintas necesidades. Nos adaptamos a las tuyas.'
+],
+ctaButtonText: '¡Contáctanos!',
+additionalClasses: 'opsarh-bblue-bg',
+noButton: false,
+href: ''
+})
+%>

@@ -165,30 +165,30 @@ img {
   color: colors.$white;
 }
 
-.serv-ambien-bg {
+.serv-estruct-bg {
   background-size: cover;
   background-attachment: local;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("/images/ambient.webp");
+  background-image: url("/images/Opsarh_web_hero_1.jpg");
   background-color: colors.$softgray;
   background-blend-mode: darken;
   color: colors.$white;
 }
 
 .empresa-bg {
-  background-size: cover;
+  background-size: contain;
   background-attachment: local;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("/images/mainoffice.webp");
+  background-image: url("/images/opsarh_web_hero_4.jpg");
   background-color: colors.$softgray;
   background-blend-mode: darken;
   color: colors.$white;
 }
 
 .index-hero-bg {
-  background-size: cover;
+  background-size: contain;
   background-attachment: local;
   background-position: center center;
   background-repeat: no-repeat;

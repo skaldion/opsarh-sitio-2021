@@ -35,15 +35,37 @@ additionalClasses: 'grey-bg'
 })
 %>
 
+<%- include('/grid', {
+mainText: 'VALORES de OPSARH',
+elements: [
+{ htmlContent: '<h3>Ética</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor diam cursus est faucibus laoreet.</p>'},
+{ htmlContent: '<h3>Confidencialidad</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor diam cursus est faucibus laoreet.</p>'},
+{ htmlContent: '<h3>Compromiso</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor diam cursus est faucibus laoreet.</p>'},
+],
+additionalClasses: 'dark-blue-bg'
+})
+%>
+
+<%- include('/grid', {
+mainText: '',
+elements: [
+{ htmlContent: '<h3>Empatía</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor diam cursus est faucibus laoreet.</p>'},
+{ htmlContent: '<h3>Mejora Contínua</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor diam cursus est faucibus laoreet.</p>'},
+{ htmlContent: '<h3>Responsabilidad Social</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor diam cursus est faucibus laoreet.</p>'},
+],
+additionalClasses: 'dark-blue-bg'
+})
+%>
+
 <%- include('/mapa') %>
 
 <%- include('/banner', {
-mainText: 'Sanitización de espacios',
+mainText: 'Trabajo Remoto',
 secondaryText: [
-'Estemos en situación de emergencia sanitaria o no, la sanitización de espacios debe ser una prioridad de todas las empresas para evitar problemas de salud en colaboradores y clientes.'
+'Derivado de la contingencia por COVID-19, hemos adecuado nuestra forma de trabajo al entorno actual. Permitiéndonos entregar la mayoría de nuestros servicios bajo un esquema 100% digital.'
 ],
 ctaButtonText: 'Leer más',
-additionalClasses: 'opsarh-purple-bg',
+additionalClasses: 'opsarh-bblue-bg',
 href: '/blog/pandemia'
 })
 %>
@@ -51,12 +73,12 @@ href: '/blog/pandemia'
 <%- include('/servicios') %>
 
 <%- include('/cta', {
-mainText: 'opsarh, expertos en facility services',
+mainText: 'OPSARH, expertos en talento humano',
 secondaryText: [
-'Somos una empresa 100% dentro del sector enfocada en brindar servicios de facilities management. Conocemos cuáles son las necesidades del mercado y como atacarlas, más de xx años nos avalan.'
+'Somos una empresa 100% dentro del sector humano. Conocemos cuáles son las necesidades del mercado y como atacarlas, más de 15 años nos avalan.'
 ],
-ctaButtonText: 'Contáctanos!',
-additionalClasses: 'light-blue-bg',
+ctaButtonText: '¡Contáctanos!',
+additionalClasses: 'skyblue-opsarh-bg',
 noButton: false,
 href: ''
 })

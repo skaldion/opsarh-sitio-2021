@@ -1,0 +1,68 @@
+---
+title: 'Reclutamiento y Selección de Personal'
+permalink: 'servicios/reclutamiento/index.html'
+description: 'Proporcionar el talento calificado y con potencial, con base en los perfiles del cliente.'
+href: '/servicios/reclutamiento'
+imgAlt: 'Tres montones de cartón reciclables.'
+imgSrc: '/images/reclutamiento.svg'
+order: 3
+---
+
+<%- include('/hero', {
+mainText: 'Reclutamiento y Selección de Personal',
+secondaryText: [
+'Proporcionar el talento calificado y con potencial, con base en los perfiles del cliente.'
+],
+ctaButtonText: 'Contáctanos',
+additionalClasses: 'serv-ambien-bg'
+})
+%>
+
+
+<%- include('/side-image', {
+heading: 'Reclutamiento y Selección',
+image: { src: '/images/reclutamiento.svg', alt: 'Unos trabajadores cargando un camión de basura con varios objetos.' },
+features: [
+{ title: '', description: 'Proporcionar el talento calificado y con potencial, con base en los perfiles del cliente, utilizando las herramientas adecuadas para su selección.' },
+{ title: '', description: ' ' },
+],
+additionalClasses: 'skyblue-opsarh-bg',
+imgClasses: ""
+})
+%>
+
+<%- include('/grid', {
+mainText: '',
+elements: [
+{ htmlContent: '<h3>Búsqueda</h3><p>Búsqueda de candidatos idóneos al puesto, utilizando perfiles acordes a las necesidades del cliente.</p>'},
+{ htmlContent: '<h3>Entrevista</h3><p>Entrevista y Evaluación de candidatos (Internos y Externos).</p>'},
+{ htmlContent: '<h3>Estudios</h3><p>Estudios Socioeconómicos.</p>'},
+],
+additionalClasses: 'grey-bg'
+})
+%>
+
+<%- include('/cta', {
+mainText: 'OPSARH, expertos en estructura y talento organizacional',
+secondaryText: [
+'¿Quieres evaluar de la mejor manera al personal de tu organización? Te ayudamos a hacerlo, Contáctanos.'
+],
+ctaButtonText: 'Contáctanos!',
+additionalClasses: 'skyblue-opsarh-bg',
+noButton: false,
+href: ''
+})
+%>
+
+<%- include('/servicios') %>
+
+<%- include('/banner', {
+mainText: 'Sanitización de espacios',
+secondaryText: [
+'En opsarh sabemos la importancia de proteger a nuestros clientes aliados por eso ante la situación creada por la emergencia sanitaria hemos reforzado nuestros protocolos de seguridad para cuidar de ti y los tuyos.'
+],
+ctaButtonText: 'Leer más',
+additionalClasses: 'opsarh-green-light-bg',
+href: '/blog/pandemia'
+})
+%>

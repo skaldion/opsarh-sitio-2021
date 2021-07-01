@@ -36,14 +36,36 @@ href: '/blog/pandemia'
 })
 %>
 
-<%- include('/beneficios') %>
+
+<%- include('/features', {
+title: '¿Por qué escoger OPSARH?',
+description: 'Estos son algunos de nuestros principales diferenciadores que nos hacen resaltar sobre la competencia.',
+features: [
+{
+image: { src: "/images/productividad.svg", alt: "Sitios de internet"},
+heading: 'Expertise',
+subFeatures: ['Nos adaptamos a tus necesidades y especificaciones.']
+},{
+image: { src: "/images/reclutamiento.svg", alt: "Comercio electronico"},
+heading: 'Eficiencia',
+subFeatures: ['Hacerlo con los menores recursos posibles.']
+},{
+image: { src: "/images/compensacion.svg", alt: "Dispositivos moviles"},
+heading: 'Eficacia',
+subFeatures: ['Hacerlo en el menor tiempo posible.']
+}
+],
+additionalClasses: 'grey-bg icons',
+colClass: ''
+})
+%>
 
 <%- include('/side-image', {
 heading: 'Ventaja Competitiva',
 image: { src: '/images/ventajas.webp', alt: 'Un vistazo de abajo hacia arriba de unos edificios al atardecer.' },
 features: [
-{ title: 'Servicios a la medida', description: 'Ofrecemos a nuestro cliente un producto hecho a la medida de sus necesidades que va desde lo más específico hasta un servicio integral. Nos enfocamos en ofrecer resultados desde el primer momento a precios accesibles y competitivos sin descuidar la calidad.' },
-{ title: 'Empresa 100% mexicana', description: 'Somos una empresa 100% mexicana que conoce la cultura e idiosincrasia del trabajo requerido por cada cliente.' },
+{ title: 'Servicios a la medida', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet eget dolor eu aliquam. Morbi bibendum pretium nulla in imperdiet. Aliquam metus mi, interdum sed eros eu, imperdiet tristique ex. Proin congue molestie est, in hendrerit eros faucibus quis. Etiam cursus lacinia lacinia. ' },
+{ title: 'Empresa 100% mexicana', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet eget dolor eu aliquam. Morbi bibendum pretium nulla in imperdiet. Aliquam metus mi, interdum sed eros eu, imperdiet tristique ex. Proin congue molestie est, in hendrerit eros faucibus quis. Etiam cursus lacinia lacinia. ' },
 ],
 additionalClasses: 'skyblue-opsarh-bg',
 imgClasses: ""
@@ -65,11 +87,11 @@ additionalClasses: 'grey-bg'
 %>
 
 <%- include('/cta', {
-mainText: 'opsarh, expertos en facility services',
+mainText: 'OPSARH, expertos en talento humano',
 secondaryText: [
-'Somos una empresa 100% dentro del sector enfocada en brindar servicios de facilities management. Conocemos cuáles son las necesidades del mercado y como atacarlas, más de xx años nos avalan.'
+'Somos una empresa 100% dentro del sector humano. Conocemos cuáles son las necesidades del mercado y como atacarlas, más de 15 años nos avalan.'
 ],
-ctaButtonText: 'Contáctanos!',
+ctaButtonText: '¡Contáctanos!',
 additionalClasses: 'lightblue-opsarh-bg',
 noButton: false,
 href: ''
