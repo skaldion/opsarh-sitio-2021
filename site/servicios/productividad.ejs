@@ -12,17 +12,17 @@ order: 5
 <%- include('/hero', {
 mainText: 'Productividad',
 secondaryText: [
-'Evaluación y desarrollo de la planeación estratégica, bajo la utilización de las herramientas que identifiquen las acciones de mejora.',
-'Desarrollando objetivos enfocados a la estrategia e incremento de la productividad.'
+'',
+''
 ],
 ctaButtonText: 'Contáctanos',
-additionalClasses: 'serv-instala-bg'
+additionalClasses: 'serv-product-bg'
 })
 %>
 
 <%- include('/side-image', {
 heading: 'Compensación y Beneficios',
-image: { src: '/images/productividad.svg', alt: 'La sala común de una empresa con dos mujeres descansando.' },
+image: { src: '/images/productividad_blanco.png', alt: 'La sala común de una empresa con dos mujeres descansando.' },
 features: [
 { title: '', description: 'Ofrecemos asesoría y/o implementamos estrategias centradas en el empleado. Propiciando el ambiente laboral óptimo, proporcionando las herramientas, capacitación y comunicación necesarias, que le permitan adaptarse a los diferentes momentos disruptivos del negocio, asegurando su aportación extraordinaria al logro de los resultados de la empresa.' },
 { title: '', description: ' ' },
@@ -35,21 +35,32 @@ imgClasses: ""
 <%- include('/grid', {
 mainText: '',
 elements: [
-{ htmlContent: '<h3>Productividad</h3><p>Tener unas instalaciones en estado óptimo te ayuda a generar un ambiente de trabajo positivo y la productividad de tus empleados puede verse incrementada.</p>'},
-{ htmlContent: '<h3>Presentación</h3><p>Contar con unos jardines e instalaciones bien cuidadas, es la mejor carta de presentación que puedes tener cuando recibas visitas importantes en tu oficina.</p>'},
-{ htmlContent: '<h3>Seguridad</h3><p>Haces sentir cuidados y protegidos a colaboradores y clientes en caso de una emergencia como sismos o incendios.</p>'},
+{ htmlContent: '<h3>Planeación</h3><p>Asesoría en Planeación estratégica y determinación de objetivos e indicadores de desempeño.</p>'},
+{ htmlContent: '<h3>Productividad</h3><p>Asesoría para maximizar la productividad a través de la gestión, capacitación y/o optimización de los recursos humanos.</p>'},
+{ htmlContent: '<h3>Capacitación</h3><p>Asesoría y capacitación para la implementación de herramientas de manufactura esbelta.</p>'},
+],
+additionalClasses: 'grey-bg'
+})
+%>
+
+<%- include('/grid', {
+mainText: '',
+elements: [
+{ htmlContent: '<h3>Implementación</h3><p>Implementación de sistemas y programas de ahorro integrales.</p>'},
+{ htmlContent: '<h3>Mejora</h3><p>Implementación de Proyectos de mejora <li>Reducción de costos</li><li>Desarrollo de procesos ágiles</li><li>Compromiso en tiempos óptimos de entrega</li><li>Aseguramiento de calidad de excelencia</li></p>'},
+{ htmlContent: '<h3>Control</h3><p>Desarrollo e implementación de tableros gráficos de control que permitan monitorear y mejorar el rendimiento de los procesos productivos, operativos y financieros de la empresa, mediante herramientas gráficas de análisis.</p>'},
 ],
 additionalClasses: 'grey-bg'
 })
 %>
 
 <%- include('/cta', {
-mainText: 'opsarh, expertos en facility services',
+mainText: 'opsarh, expertos en talento organizacional',
 secondaryText: [
 '¿Quieres generar un ambiente laboral sano? Nosotros te decimos cómo lograrlo.'
 ],
-ctaButtonText: 'Contáctanos!',
-additionalClasses: 'opsarh-green-bg',
+ctaButtonText: '¡Contáctanos!',
+additionalClasses: 'lightblue-opsarh-bg',
 noButton: false,
 href: ''
 })
@@ -57,13 +68,14 @@ href: ''
 
 <%- include('/servicios') %>
 
-<%- include('/banner', {
-mainText: 'Sanitización de espacios',
+<%- include('/cta', {
+mainText: 'Todas las posibilidades en talento para tu organización',
 secondaryText: [
-'Estemos en situación de emergencia sanitaria o no, la sanitización de espacios debe ser una prioridad de todas las empresas para evitar problemas de salud en colaboradores y clientes.'
+'Sabemos que cada organización desde la más pequeña hasta el corporativo más grande tiene distintas necesidades. Nos adaptamos a las tuyas.'
 ],
-ctaButtonText: 'Leer más',
-additionalClasses: 'opsarh-purple-bg',
-href: '/blog/pandemia'
+ctaButtonText: '¡Contáctanos!',
+additionalClasses: 'opsarh-bblue-bg',
+noButton: false,
+href: ''
 })
 %>

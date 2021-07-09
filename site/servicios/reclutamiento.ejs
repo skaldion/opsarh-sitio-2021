@@ -11,17 +11,17 @@ order: 3
 <%- include('/hero', {
 mainText: 'Reclutamiento y Selección de Personal',
 secondaryText: [
-'Proporcionar el talento calificado y con potencial, con base en los perfiles del cliente.'
+''
 ],
 ctaButtonText: 'Contáctanos',
-additionalClasses: 'serv-ambien-bg'
+additionalClasses: 'serv-reclu-bg'
 })
 %>
 
 
 <%- include('/side-image', {
 heading: 'Reclutamiento y Selección',
-image: { src: '/images/reclutamiento.svg', alt: 'Unos trabajadores cargando un camión de basura con varios objetos.' },
+image: { src: '/images/reclutamiento_blanco.png', alt: 'Unos trabajadores cargando un camión de basura con varios objetos.' },
 features: [
 { title: '', description: 'Proporcionar el talento calificado y con potencial, con base en los perfiles del cliente, utilizando las herramientas adecuadas para su selección.' },
 { title: '', description: ' ' },
@@ -43,12 +43,12 @@ additionalClasses: 'grey-bg'
 %>
 
 <%- include('/cta', {
-mainText: 'OPSARH, expertos en estructura y talento organizacional',
+mainText: 'opsarh, expertos en talento organizacional',
 secondaryText: [
-'¿Quieres evaluar de la mejor manera al personal de tu organización? Te ayudamos a hacerlo, Contáctanos.'
+'¿Quieres generar un ambiente laboral sano? Nosotros te decimos cómo lograrlo.'
 ],
-ctaButtonText: 'Contáctanos!',
-additionalClasses: 'skyblue-opsarh-bg',
+ctaButtonText: '¡Contáctanos!',
+additionalClasses: 'lightblue-opsarh-bg',
 noButton: false,
 href: ''
 })
@@ -56,13 +56,14 @@ href: ''
 
 <%- include('/servicios') %>
 
-<%- include('/banner', {
-mainText: 'Sanitización de espacios',
+<%- include('/cta', {
+mainText: 'Todas las posibilidades en talento para tu organización',
 secondaryText: [
-'En opsarh sabemos la importancia de proteger a nuestros clientes aliados por eso ante la situación creada por la emergencia sanitaria hemos reforzado nuestros protocolos de seguridad para cuidar de ti y los tuyos.'
+'Sabemos que cada organización desde la más pequeña hasta el corporativo más grande tiene distintas necesidades. Nos adaptamos a las tuyas.'
 ],
-ctaButtonText: 'Leer más',
-additionalClasses: 'opsarh-green-light-bg',
-href: '/blog/pandemia'
+ctaButtonText: '¡Contáctanos!',
+additionalClasses: 'opsarh-bblue-bg',
+noButton: false,
+href: ''
 })
 %>

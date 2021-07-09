@@ -22,3 +22,9 @@
     justify-content: end;
   }
 }
+
+@include media-breakpoint-down(xs) {
+  .carousel-block .carousel-item {
+    min-height: 300px;
+  }
+}

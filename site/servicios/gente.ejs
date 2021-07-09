@@ -10,17 +10,17 @@ order: 2
 <%- include('/hero', {
 mainText: 'Gente y Aprendizaje',
 secondaryText: [
-'Enfocados en general el mejor ambiente  laboral en tu empresa.',
+'',
 ''
 ],
 ctaButtonText: 'Contáctanos',
-additionalClasses: 'serv-instala-bg'
+additionalClasses: 'serv-gente-bg'
 })
 %>
 
 <%- include('/side-image', {
 heading: 'Gente y Aprendizaje',
-image: { src: '/images/gente_aprendizaje.svg', alt: 'La sala común de una empresa con dos mujeres descansando.' },
+image: { src: '/images/gente_blanco.png', alt: 'La sala común de una empresa con dos mujeres descansando.' },
 features: [
 { title: '', description: 'Ofrecemos asesoría y/o implementamos estrategias centradas en el empleado. Propiciando el ambiente laboral óptimo, proporcionando las herramientas, capacitación y comunicación necesarias, que le permitan adaptarse a los diferentes momentos disruptivos del negocio, asegurando su aportación extraordinaria al logro de los resultados de la empresa.' },
 { title: '', description: ' ' },
@@ -31,23 +31,36 @@ imgClasses: ""
 %>
 
 <%- include('/grid', {
-mainText: '',
+mainText: 'Gente',
 elements: [
-{ htmlContent: '<h3>Productividad</h3><p>Tener unas instalaciones en estado óptimo te ayuda a generar un ambiente de trabajo positivo y la productividad de tus empleados puede verse incrementada.</p>'},
-{ htmlContent: '<h3>Presentación</h3><p>Contar con unos jardines e instalaciones bien cuidadas, es la mejor carta de presentación que puedes tener cuando recibas visitas importantes en tu oficina.</p>'},
-{ htmlContent: '<h3>Seguridad</h3><p>Haces sentir cuidados y protegidos a colaboradores y clientes en caso de una emergencia como sismos o incendios.</p>'},
+{ htmlContent: '<h3>Estrategias</h3><p>Desarrollo de estrategias de Administración del Cambio que acompañen al empleado a lo largo de la curva de adopción: <li>Liderazgo</li><li>Comunicación</li><li>Aprendizaje</li></p>'},
+{ htmlContent: '<h3>Integración</h3><p>Desarrollo de programas de integración.* (Interno-Remoto)</p>'},
+{ htmlContent: '<h3>Reconocimiento</h3><p>Creación de programas de reconocimiento.</p>'},
+{ htmlContent: '<h3>Clima</h3><p>Estudios de clima organizacional.</p>'},
+],
+additionalClasses: 'grey-bg'
+})
+%>
+
+
+<%- include('/grid', {
+mainText: 'Aprendizaje',
+elements: [
+{ htmlContent: '<h3>Necesidades</h3><p>Detección de necesidades de capacitación</p>'},
+{ htmlContent: '<h3>Cursos</h3><p>Diseño de cursos conforme a las necesidades del cliente. (Interno-Remoto)</p>'},
+{ htmlContent: '<h3>Talleres</h3><p>Aplicación de cursos y talleres. (Remoto)</p>'},
 ],
 additionalClasses: 'grey-bg'
 })
 %>
 
 <%- include('/cta', {
-mainText: 'opsarh, expertos en facility services',
+mainText: 'opsarh, expertos en talento organizacional',
 secondaryText: [
 '¿Quieres generar un ambiente laboral sano? Nosotros te decimos cómo lograrlo.'
 ],
-ctaButtonText: 'Contáctanos!',
-additionalClasses: 'opsarh-green-bg',
+ctaButtonText: '¡Contáctanos!',
+additionalClasses: 'lightblue-opsarh-bg',
 noButton: false,
 href: ''
 })
@@ -55,13 +68,14 @@ href: ''
 
 <%- include('/servicios') %>
 
-<%- include('/banner', {
-mainText: 'Sanitización de espacios',
+<%- include('/cta', {
+mainText: 'Todas las posibilidades en talento para tu organización',
 secondaryText: [
-'Estemos en situación de emergencia sanitaria o no, la sanitización de espacios debe ser una prioridad de todas las empresas para evitar problemas de salud en colaboradores y clientes.'
+'Sabemos que cada organización desde la más pequeña hasta el corporativo más grande tiene distintas necesidades. Nos adaptamos a las tuyas.'
 ],
-ctaButtonText: 'Leer más',
-additionalClasses: 'opsarh-purple-bg',
-href: '/blog/pandemia'
+ctaButtonText: '¡Contáctanos!',
+additionalClasses: 'opsarh-bblue-bg',
+noButton: false,
+href: ''
 })
 %>
