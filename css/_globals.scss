@@ -127,9 +127,9 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url("/images/opsarh_web_hero_4.jpg");
-  background-color: colors.$softgray;
+  background-color: colors.$white;
   background-blend-mode: darken;
-  color: colors.$black;
+  color: colors.$blue-dark;
 }
 
 .serv-product-bg {
@@ -137,10 +137,10 @@ img {
   background-attachment: local;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("/images/opsarhHero3.jpg");
-  background-color: colors.$softgray;
+  background-image: url("/images/opsarh _web_hero_2.jpg");
+  background-color: colors.$white;
   background-blend-mode: darken;
-  color: colors.$black;
+  color: colors.$blue-dark;
 }
 
 .serv-operaci-bg {
@@ -160,9 +160,9 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url("/images/opsarh_web_hero_6.jpg");
-  background-color: colors.$softgray;
+  background-color: colors.$white;
   background-blend-mode: darken;
-  color: colors.$black;
+  color: colors.$blue-003;
 }
 
 .serv-reclu-bg {
@@ -171,9 +171,9 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url("/images/opsarh_web_hero_4.jpg");
-  background-color: colors.$softgray;
+  background-color: colors.$white;
   background-blend-mode: darken;
-  color: colors.$black;
+  color: colors.$blue-dark;
 }
 .serv-estruct-bg {
   background-size: cover;
@@ -181,21 +181,20 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url("/images/Opsarh_web_hero_1.jpg");
-  background-color: colors.$softgray;
+  background-color: colors.$white;
   background-blend-mode: darken;
   color: colors.$blue-003;
-  text-align: center;
 }
 
 .empresa-bg {
-  background-size: contain;
+  background-size: cover;
   background-attachment: local;
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url("/images/opsarh_web_hero_4.jpg");
-  background-color: colors.$softgray;
+  background-color: colors.$white;
   background-blend-mode: darken;
-  color: colors.$white;
+  color: colors.$blue-dark;
 }
 
 .index-hero-bg {
@@ -203,10 +202,11 @@ img {
   background-attachment: local;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("/images/opsarh_Home.jpg");
+  background-image: url("/images/opsarh_Hero_Home_Test7.jpg");
   background-color: colors.$white;
   background-blend-mode: darken;
-  color: colors.$black;
+  color: colors.$blue-003;
+  text-align: center;
 
 }
 
@@ -235,3 +235,4 @@ img {
   height: 100px;
   margin-bottom: 20px;
 }
+
