@@ -7,7 +7,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
+            <!--<div class="modal-body">
                 <p>Puedes contactarnos por medio de Whatsapp dando click en el siguiente botón:</p>
                 <div class='contact-info'>
                     <svg class='icon' style="enable-background:new 0 0 64 64;" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
@@ -36,7 +36,7 @@
                     <a class='btn btn-primary' href="https://wa.me/525580401293" target="_blank">Ir a Whatsapp</a>
                 </div>
             </div>
-            <div class='modal-separator'><span class='text'>O</span></div>
+            <div class='modal-separator'><span class='text'>O</span></div>-->
             <form name='contacto-opsarh' action='/exito' method='POST' data-netlify='true' class='needs-validation' novalidate>
                 <div class="modal-body">
                     <p>Envíanos tus preguntas usando el siguiente formulario:</p>
@@ -49,11 +49,23 @@
                         <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu información con nadie.</small>
                     </div>
                     <div class="form-group">
-                        <label for="nombreInput">Nombre <span class="text-muted">(Opcional)</span></label>
-                        <input name='nombre' type="text" class="form-control" id="nombreInput">
+                        <label for="nombreInput">Nombre completo <span class="text-muted">(Obligatorio)</span></label>
+                        <input name='nombre' type="text" class="form-control" id="nombreInput" required=''>
                     </div>
                     <div class="form-group">
-                        <label for="modal-pregunta">Preguntas <span class="text-muted">(Opcional)</span></label>
+                        <label for="empresaInput">Empresa <span class="text-muted">(Obligatorio)</span></label>
+                        <input name='empresa' type="text" class="form-control" id="empresaInput" required=''>
+                    </div>
+                    <div class="form-group">
+                        <label for="puestoInput">Puesto <span class="text-muted">(Obligatorio)</span></label>
+                        <input name='puesto' type="text" class="form-control" id="puestoInput" required=''>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">Teléfono <span class="text-muted">(Opcional)</span></label>
+                        <input name='tel' type="text" class="form-control" id="tel">
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-pregunta">Mensaje <span class="text-muted">(Opcional)</span></label>
                         <textarea name='preguntas' class="form-control" id="modal-pregunta" aria-describedby="pregunta"></textarea>
                     </div>
                 </div>
