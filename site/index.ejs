@@ -3,9 +3,9 @@ layout: base.ejs
 ---
 
 <%- include('/hero', {
-mainText: 'opsarh',
+mainText: 'OPSARH',
 secondaryText: [
-'Somos una empresa de prestación de servicios enfocada en cada uno de los elementos de mantenimiento ya sea en oficinas corporativas o edificios industriales alrededor de la cadena de suministro.',
+'Operadora de Servicios Administrativos y de Recursos Humanos',
 ],
 ctaButtonText: 'Contáctanos',
 additionalClasses: 'index-hero-bg'
@@ -13,60 +13,87 @@ additionalClasses: 'index-hero-bg'
 %>
 
 <%- include('/banner', {
-mainText: 'Nuestra posición ante la pandemia',
+mainText: 'Trabajo Remoto',
 secondaryText: [
-'En opsarh sabemos la importancia de proteger a nuestros clientes aliados por eso ante la situación creada por la emergencia sanitaria hemos reforzado nuestros protocolos de seguridad para cuidar de tí y los tuyos.'
+'Derivado de la contingencia por COVID-19, hemos adecuado nuestra forma de trabajo al entorno actual. Permitiéndonos entregar la mayoría de nuestros servicios bajo un esquema 100% digital.'
 ],
-ctaButtonText: 'Leer más',
-additionalClasses: 'opsarh-purple-light-bg',
-href: '/blog/pandemia'
-})
-%>
-
-<%- include('/side-image', {
-heading: 'Integrated Facilities Management',
-image: { src: '/images/facility.webp', alt: 'Un ingeniero dándole mantenimiento al equipo industrial de la empresa.' },
-features: [
-{ title: '', description: 'Nuestro objetivo es ayudarte a tener un desempeño excelente manteniendo todos los insumos relacionados con la cadena de producción en perfecto estado.' },
-{ title: '', description: '' },
-],
-additionalClasses: 'opsarh-purple-bg',
-imgClasses: "order-2"
+ctaButtonText: 'Conócenos',
+additionalClasses: 'opsarh-bblue-bg',
+href: '/empresa'
 })
 %>
 
 <%- include('/servicios') %>
 
 <%- include('/banner', {
-mainText: 'Sanitización de espacios',
+mainText: 'Recursos Humanos a la Medida',
 secondaryText: [
-'Estemos en situación de emergencia sanitaria o no, la sanitización de espacios debe ser una prioridad de todas las empresas para evitar problemas de salud en colaboradores y clientes.'
+'¿No encontró lo que estaba buscando? Desarrollamos soluciones totalmente a la medida de tu necesidad, negocio u organización.'
 ],
-ctaButtonText: 'Leer más',
-additionalClasses: 'opsarh-green-light-bg',
-href: '/blog/pandemia'
+ctaButtonText: 'Conoce más',
+additionalClasses: 'lightblue-opsarh-bg',
+href: '/servicios/reclutamiento'
+})
+%>
+
+
+<%- include('/features', {
+title: '¿Por qué escoger OPSARH?',
+description: 'Estos son algunos de nuestros principales diferenciadores que nos hacen resaltar sobre la competencia.',
+features: [
+{
+image: { src: "/images/eficacia.svg", alt: "Resultados"},
+heading: 'Resultados',
+subFeatures: ['Resultados a través de la gente']
+},{
+image: { src: "/images/eficiencia.svg", alt: "Comercio electronico"},
+heading: 'Estrategias',
+subFeatures: ['Los datos son nuestra base para generar estrategias, toma de decisiones y resultados.']
+},{
+image: { src: "/images/a_medida.svg", alt: "Ambientes"},
+heading: 'Ambientes',
+subFeatures: ['Especialistas en ambientes disruptivos.']
+},{
+image: { src: "/images/agilidad.svg", alt: "Tecnologías"},
+heading: 'Tecnologías',
+subFeatures: ['Utilización de tecnologías en tendencia.']
+},{
+image: { src: "/images/estructura_talento.svg", alt: "Futuro"},
+heading: 'Futuro',
+subFeatures: ['Preparamos a la fuerza laboral del futuro.']
+},{
+image: { src: "/images/trabajo_remoto.svg", alt: "A la medida"},
+heading: 'Soluciones a la medida',
+subFeatures: ['Soluciones a escala de acuerdo a tus necesidades']
+}
+],
+additionalClasses: 'grey-bg icons',
+colClass: ''
 })
 %>
 
 <%- include('/side-image', {
 heading: 'Ventaja Competitiva',
-image: { src: '/images/ventajas.webp', alt: 'Un vistazo de abajo hacia arriba de unos edificios al atardecer.' },
+image: { src: '/images/building.webp', alt: 'Un vistazo hacia arriba de unos edificios al atardecer.' },
 features: [
-{ title: 'Servicios a la medida', description: 'Ofrecemos a nuestro cliente un producto hecho a la medida de sus necesidades que va desde lo más específico hasta un servicio integral. Nos enfocamos en ofrecer resultados desde el primer momento a precios accesibles y competitivos sin descuidar la calidad.' },
-{ title: 'Empresa 100% mexicana', description: 'Somos una empresa 100% mexicana que conoce la cultura e idiosincrasia del trabajo requerido por cada cliente.' },
+{ title: 'EN OPSARH', description: 'Estamos comprometidos a utilizar nuestras fortalezas para  atender de manera personalizada tus necesidades.' },
 ],
-additionalClasses: 'opsarh-green-bg',
+additionalClasses: 'skyblue-opsarh-bg',
 imgClasses: ""
 })
 %>
 
 <%- include('/cards', {
-mainText: 'Historias de Éxito',
+mainText: 'Clientes',
 secondaryText: '',
 cards: [
-{ imgAlt: 'Una mesa con diferentes tipos de solventes y pinturas.', imgSrc: '/images/paint.webp', title: 'Empresa de Pinturas y manejo de Solventes', description: ''},
-{ imgAlt: 'Una oficina con dieciocho cabinas y 18 sillas.', imgSrc: '/images/office.webp', title: 'Desarrollo en corporativo y adecuación', description: ''},
-{ imgAlt: 'Un motor de automóvil con partes nuevas.', imgSrc: '/images/engine.webp', title: 'Fabricante de Autos', description: ''},
+{ imgAlt: 'Poly One cliente OPSARH', imgSrc: '/images/polyone-min.png', title: '', description: '', href: 'https://www.polyone.com'},
+{ imgAlt: 'Sánchez y Martin cliente OPSARH', imgSrc: '/images/sanchez-min.png', title: '', description: ''},
+{ imgAlt: 'Full Service cliente OPSARH', imgSrc: '/images/fullservice-min.png', title: '', description: '', href: 'http://www.fullservicedemexico.com'},
+{ imgAlt: 'Zimag cliente OPSARH', imgSrc: '/images/zimag-min.png', title: '', description: '', href: 'http://www.sezimag.com.mx'},
+{ imgAlt: 'Sartorius cliente OPSARH', imgSrc: '/images/sartorius-min.png', title: '', description: '', href: 'https://www.sartorius.com'},
+{ imgAlt: 'Danone cliente OPSARH', imgSrc: '/images/danone-min.png', title: '', description: '', href: 'https://www.grupodanone.com.mx'},
+{ imgAlt: 'Nutrisa cliente OPSARH', imgSrc: '/images/nutrisa-min.png', title: '', description: '', href: 'https://www.nutrisa.com'},
 ],
 noButton: true,
 ctaButtonText: 'Cotizar ahora',
@@ -74,16 +101,13 @@ additionalClasses: 'grey-bg'
 })
 %>
 
-<%- include('/certificaciones') %>
-<%- include('/blog-latest') %>
-
 <%- include('/cta', {
-mainText: 'opsarh, expertos en facility services',
+mainText: 'OPSARH, expertos en talento humano',
 secondaryText: [
-'Somos una empresa 100% dentro del sector enfocada en brindar servicios de facilities management. Conocemos cuáles son las necesidades del mercado y como atacarlas, más de xx años nos avalan.'
+'Somos una empresa 100% dentro del sector humano. Conocemos cuáles son las necesidades del mercado y como atacarlas, más de 15 años nos avalan.'
 ],
-ctaButtonText: 'Contáctanos!',
-additionalClasses: 'light-blue-bg',
+ctaButtonText: '¡Contáctanos!',
+additionalClasses: 'lightblue-opsarh-bg',
 noButton: false,
 href: ''
 })

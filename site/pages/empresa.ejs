@@ -1,11 +1,11 @@
 ---
-title: 'Empresa'
+title: 'Nosotros'
 permalink: 'empresa/index.html'
 ---
 <%- include('/hero', {
 mainText: 'NOSOTROS',
 secondaryText: [
-'Somos un grupo formado por empresas 100% mexicanas, conformadas por equipos de profesionales especializados en la prestación de servicios integrales, el desarrollo de proyectos y la gestión integral de activos.'
+'Empresa 100% mexicana con más de 15 años en el mercado, proporcionando a nuestros clientes soluciones ágiles en los procesos de recursos humanos bajo un entorno de confianza.'
 ],
 ctaButtonText: 'Contáctanos',
 additionalClasses: 'empresa-bg'
@@ -16,9 +16,7 @@ additionalClasses: 'empresa-bg'
 heading: '',
 image: { src: '/images/team.webp', alt: 'Una sala de juntas con una laptop, una mesa y 6 sillas a la vista.' },
 features: [
-{ title: '¿Quienes somos?', description: 'Somos un grupo formado por empresas 100% mexicanas, conformadas por equipos de profecionales especializados en la prestación de servicios integrales, el desarrollo de proyectos y la gestión integral de activos.' },
-{ title: '¿Que ofrecemos?', description: 'Nuestro compromiso es encontrar y desarrollar nuevos productos, así como entregar soluciones ágiles e integrales "lave en mano" hechas a la medida de las necesidades de nuestros clientes. Nos hemos aliado con empresas de manufactura y servicios, líderes en su ramo, garantizando entregar la mejor calidad en nuestros productos.' },
-{ title: '', description: '' },
+{ title: '¿Quienes somos?', description: 'Empresa 100% mexicana con más de 15 años en el mercado, proporcionando a nuestros clientes soluciones ágiles en los procesos de recursos humanos bajo un entorno de confianza,  innovación y transformación hacia las estrategias del negocio, que permitan acelerar el logro de tus objetivos e incrementar la productividad.' },
 ],
 additionalClasses: 'opsarh-blue-bg',
 imgClasses: ""
@@ -28,22 +26,44 @@ imgClasses: ""
 <%- include('/grid', {
 mainText: '',
 elements: [
-{ htmlContent: '<h3>Misión</h3><p>Agregar valor a nuestros clientes, satisfaciendo las necesidades de su negocio a través de nuestros productos, así como de la elaboración de productos innovadores y de alta calidad.</p>'},
-{ htmlContent: '<h3>Visión</h3><p>Ser la empresa líder en el ramo de facilities management y gestión de activos, convertirnos en la compañía referencia en soluciones de espacios integrados de proyectos, de manera sustentable y generando valor para nuestros clientes y para todo México.</p>'},
+{ htmlContent: '<h3>Visión Comercial</h3><p>Ser la organización por elección y preferencia, para acompañar a  los clientes en el cumplimiento de sus objetivos estratégicos.</p>'},
+{ htmlContent: '<h3>Misión</h3><p>Ofrecer a los clientes servicios profesionales de calidad, acompañándolos en sus procesos de transformación organizacional; optimizando y/o estandarizando los procesos administrativos asociados a su operación; respondiendo a las necesidades relacionadas con la función de Recursos Humanos e implementando metodologías enfocadas a mejorar la rentabilidad.</p>'},
 ],
 additionalClasses: 'grey-bg'
+})
+%>
+
+<%- include('/grid', {
+mainText: 'VALORES de OPSARH',
+elements: [
+{ htmlContent: '<h3>Ética</h3><p> El comportamiento y actuar de nuestros profesionales esta soportado por el cumplimiento del marco moral de nuestra sociedad. Fomentando en todo momento honestidad, lealtad y respeto.</p>'},
+{ htmlContent: '<h3>Confidencialidad</h3><p>Garantizar el tratamiento adecuado de los datos confidenciales y sensibles de cada Cliente.</p>'},
+{ htmlContent: '<h3>Compromiso</h3><p>Entregar servicios de calidad, conforme al alcance estipulado en el contrato. Utilizando como principal garantía los resultados del Proyecto.</p>'},
+],
+additionalClasses: 'dark-blue-bg'
+})
+%>
+
+<%- include('/grid', {
+mainText: '',
+elements: [
+{ htmlContent: '<h3>Empatía</h3><p>Establecer conexiones sostenibles en el tiempo con Clientes y Proveedores, que nos permitan entender a profundidad la naturaleza de sus necesidades y proporcionar así la mejor solución.</p>'},
+{ htmlContent: '<h3>Mejora Continua</h3><p>Estar en constante contacto con la evolución de metodologías, herramientas y procesos, que nos permitan ofrecer servicios de vanguardia.</p>'},
+{ htmlContent: '<h3>Responsabilidad Social</h3><p>La Inclusión, Equidad, Medio ambiente y Utilización inteligente de recursos, son frases o palabras de peso en el vocabulario de OPSARH.</p>'},
+],
+additionalClasses: 'dark-blue-bg'
 })
 %>
 
 <%- include('/mapa') %>
 
 <%- include('/banner', {
-mainText: 'Sanitización de espacios',
+mainText: 'Trabajo Remoto',
 secondaryText: [
-'Estemos en situación de emergencia sanitaria o no, la sanitización de espacios debe ser una prioridad de todas las empresas para evitar problemas de salud en colaboradores y clientes.'
+'Derivado de la contingencia por COVID-19, hemos adecuado nuestra forma de trabajo al entorno actual. Permitiéndonos entregar la mayoría de nuestros servicios bajo un esquema 100% digital.'
 ],
 ctaButtonText: 'Leer más',
-additionalClasses: 'opsarh-purple-bg',
+additionalClasses: 'opsarh-bblue-bg',
 href: '/blog/pandemia'
 })
 %>
@@ -51,12 +71,12 @@ href: '/blog/pandemia'
 <%- include('/servicios') %>
 
 <%- include('/cta', {
-mainText: 'opsarh, expertos en facility services',
+mainText: 'OPSARH, expertos en talento humano',
 secondaryText: [
-'Somos una empresa 100% dentro del sector enfocada en brindar servicios de facilities management. Conocemos cuáles son las necesidades del mercado y como atacarlas, más de xx años nos avalan.'
+'Somos una empresa 100% dentro del sector humano. Conocemos cuáles son las necesidades del mercado y como atacarlas, más de 15 años nos avalan.'
 ],
-ctaButtonText: 'Contáctanos!',
-additionalClasses: 'light-blue-bg',
+ctaButtonText: '¡Contáctanos!',
+additionalClasses: 'skyblue-opsarh-bg',
 noButton: false,
 href: ''
 })

@@ -1,0 +1,69 @@
+---
+title: 'Reclutamiento y Selección de Personal'
+permalink: 'servicios/reclutamiento/index.html'
+description: 'Proporcionar el talento calificado y con potencial, con base en los perfiles del cliente.'
+href: '/servicios/reclutamiento'
+imgAlt: 'Hero Reclutamiento'
+imgSrc: '/images/reclutamiento.svg'
+order: 3
+---
+
+<%- include('/hero', {
+mainText: 'Reclutamiento y Selección de Personal',
+secondaryText: [
+''
+],
+ctaButtonText: 'Contáctanos',
+additionalClasses: 'serv-reclu-bg'
+})
+%>
+
+
+<%- include('/side-image', {
+heading: 'Reclutamiento y Selección',
+image: { src: '/images/reclutamiento_blanco.png', alt: 'Persona en círculo logo OPSARH.' },
+features: [
+{ title: '', description: 'Proporcionar el talento calificado y con potencial, con base en los perfiles del cliente, utilizando las herramientas adecuadas para su selección.' },
+{ title: '', description: ' ' },
+],
+additionalClasses: 'skyblue-opsarh-bg',
+imgClasses: ""
+})
+%>
+
+<%- include('/grid', {
+mainText: '',
+elements: [
+{ htmlContent: '<h3>Búsqueda</h3><p>Búsqueda de candidatos idóneos al puesto, utilizando perfiles acordes a las necesidades del cliente.</p>'},
+{ htmlContent: '<h3>Entrevista</h3><p>Entrevista y Evaluación de candidatos (Internos y Externos).</p>'},
+{ htmlContent: '<h3>Estudios</h3><p>Estudios Socioeconómicos.</p>'},
+],
+additionalClasses: 'grey-bg'
+})
+%>
+
+<%- include('/cta', {
+mainText: 'opsarh, expertos en talento organizacional',
+secondaryText: [
+'¿Quieres generar un ambiente laboral sano? Nosotros te decimos cómo lograrlo.'
+],
+ctaButtonText: '¡Contáctanos!',
+additionalClasses: 'lightblue-opsarh-bg',
+noButton: false,
+href: ''
+})
+%>
+
+<%- include('/servicios') %>
+
+<%- include('/cta', {
+mainText: 'Todas las posibilidades en talento para tu organización',
+secondaryText: [
+'Sabemos que cada organización desde la más pequeña hasta el corporativo más grande tiene distintas necesidades. Nos adaptamos a las tuyas.'
+],
+ctaButtonText: '¡Contáctanos!',
+additionalClasses: 'opsarh-bblue-bg',
+noButton: false,
+href: ''
+})
+%>

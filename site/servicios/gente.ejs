@@ -1,0 +1,81 @@
+---
+title: 'Gente y Aprendizaje'
+permalink: 'servicios/gente/index.html'
+description: 'Ofrecemos asesoría y/o implementamos estrategias centradas en el empleado.'
+href: '/servicios/gente'
+imgAlt: 'Dos máquinas de aire acondicionado.'
+imgSrc: '/images/gente_aprendizaje.svg'
+order: 2
+---
+<%- include('/hero', {
+mainText: 'Gente y Aprendizaje',
+secondaryText: [
+'',
+''
+],
+ctaButtonText: 'Contáctanos',
+additionalClasses: 'serv-gente-bg'
+})
+%>
+
+<%- include('/side-image', {
+heading: 'Gente y Aprendizaje',
+image: { src: '/images/gente_blanco.png', alt: 'Tres personas comunicándose' },
+features: [
+{ title: '', description: 'Ofrecemos asesoría y/o implementamos estrategias centradas en el empleado. Propiciando el ambiente laboral óptimo, proporcionando las herramientas, capacitación y comunicación necesarias, que le permitan adaptarse a los diferentes momentos disruptivos del negocio, asegurando su aportación extraordinaria al logro de los resultados de la empresa.' },
+{ title: '', description: ' ' },
+],
+additionalClasses: 'skyblue-opsarh-bg',
+imgClasses: ""
+})
+%>
+
+<%- include('/grid', {
+mainText: 'Gente',
+elements: [
+{ htmlContent: '<h3>Estrategias</h3><p>Desarrollo de estrategias de Administración del Cambio que acompañen al empleado a lo largo de la curva de adopción: <li>Liderazgo</li><li>Comunicación</li><li>Aprendizaje</li></p>'},
+{ htmlContent: '<h3>Integración</h3><p>Desarrollo de programas de integración.* (Interno-Remoto)</p>'},
+{ htmlContent: '<h3>Reconocimiento</h3><p>Creación de programas de reconocimiento.</p>'},
+{ htmlContent: '<h3>Clima</h3><p>Estudios de clima organizacional.</p>'},
+],
+additionalClasses: 'grey-bg'
+})
+%>
+
+
+<%- include('/grid', {
+mainText: 'Aprendizaje',
+elements: [
+{ htmlContent: '<h3>Necesidades</h3><p>Detección de necesidades de capacitación</p>'},
+{ htmlContent: '<h3>Cursos</h3><p>Diseño de cursos conforme a las necesidades del cliente. (Interno-Remoto)</p>'},
+{ htmlContent: '<h3>Talleres</h3><p>Aplicación de cursos y talleres. (Remoto)</p>'},
+],
+additionalClasses: 'grey-bg'
+})
+%>
+
+<%- include('/cta', {
+mainText: 'OPSARH, expertos en talento organizacional',
+secondaryText: [
+'¿Quieres generar un ambiente laboral sano? Nosotros te decimos cómo lograrlo.'
+],
+ctaButtonText: '¡Contáctanos!',
+additionalClasses: 'lightblue-opsarh-bg',
+noButton: false,
+href: ''
+})
+%>
+
+<%- include('/servicios') %>
+
+<%- include('/cta', {
+mainText: 'Todas las posibilidades en talento para tu organización',
+secondaryText: [
+'Sabemos que cada organización desde la más pequeña hasta el corporativo más grande tiene distintas necesidades. Nos adaptamos a las tuyas.'
+],
+ctaButtonText: '¡Contáctanos!',
+additionalClasses: 'opsarh-bblue-bg',
+noButton: false,
+href: ''
+})
+%>

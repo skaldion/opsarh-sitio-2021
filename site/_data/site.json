@@ -1,9 +1,9 @@
 {
 	"siteName": "Skaldion Eleventy Template",
-	"title": "opsarh",
-	"description": "opsarh Websites",
+	"title": "OPSARH- Operadora de Servicios Administrativos y Recursos Humanos",
+	"description": "OPSARH Websites",
 	"url": "https://localhost:8080",
 	"locale": "es",
 	"author": "Skaldion",
-	"companyName": "opsarh"
+	"companyName": "OPSARH"
 }
