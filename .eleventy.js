@@ -9,6 +9,7 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addPassthroughCopy('images/');
 	eleventyConfig.addPassthroughCopy({'js/app': 'assets/app'});
+	eleventyConfig.addPassthroughCopy({'js/static': 'assets/'});
 	eleventyConfig.addPassthroughCopy({ 'site/_processed': 'assets/' });
 
 	eleventyConfig.setEjsOptions({
