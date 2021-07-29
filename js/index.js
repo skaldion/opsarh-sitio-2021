@@ -5,57 +5,173 @@ import bootstrapCarousel from '../node_modules/bootstrap/js/src/carousel';
 import bootstrapDropdown from '../node_modules/bootstrap/js/src/dropdown';
 import bootstrapCollapse from '../node_modules/bootstrap/js/src/collapse';
 
-$(document).ready(() => {
+$(document).ready(function() {
+	var width = window.screen.width - 30;
+	var height = width * 0.45;
 
-	var color = d3.scaleOrdinal(d3.schemePastel1);
-
-	var layout = cloud()
-		.size([500, 500])
-		.words([
-			'Hello', 'world', 'normally', 'you', 'want', 'more', 'words',
-			'than', 'this'].map(function(d, i) {
-			return {
-				text: d,
-				size: 10 + Math.random() * 90,
-				fill: color(i)
-			};
-		}))
-		.padding(5)
-		.rotate(function() {
-			return ~~(Math.random() * 2) * 90;
-		})
-		.font('Impact')
-		.fontSize(function(d) {
-			return d.size;
-		})
-		.on('end', draw);
-
-	layout.start();
-
-	function draw(words) {
-		d3.select('body').append('svg')
-			.attr('width', layout.size()[0])
-			.attr('height', layout.size()[1])
-			.append('g')
-			.attr('transform', 'translate(' + layout.size()[0] / 2 + ',' + layout.size()[1] / 2 + ')')
-			.selectAll('text')
-			.data(words)
-			.enter().append('text')
-			.style('font-size', function(d) {
-				return d.size + 'px';
-			})
-			.style('font-family', 'Impact')
-			.style('fill', function(d) {
-				return d.fill
-			})
-			.attr('text-anchor', 'middle')
-			.attr('transform', function(d) {
-				return 'translate(' + [d.x, d.y] + ')rotate(' + d.rotate + ')';
-			})
-			.text(function(d) {
-				return d.text;
-			});
+	function getCanvasCenter() {
+		return `${width / 2},${height / 2}`;
 	}
+
+	//Simple animated example of d3-cloud - https://github.com/jasondavies/d3-cloud
+	//Based on https://github.com/jasondavies/d3-cloud/blob/master/examples/simple.html
+
+	// Encapsulate the word cloud functionality
+	function wordCloud(selector) {
+
+		var fill = d3.scale.category20();
+
+		//Construct the word cloud's SVG element
+		var svg = d3
+			.select(selector)
+			.append('svg')
+			.classed('word-cloud-svg', true)
+			.attr('width', width)
+			.attr('height', height)
+			.append('g')
+			.attr('transform', 'translate(' + getCanvasCenter() + ')');
+
+
+		//Draw the word cloud
+		function draw(words) {
+			var cloud = svg.selectAll('g text')
+				.data(words, function(d) {
+					return d.text;
+				});
+
+			//Entering words
+			cloud.enter()
+				.append('text')
+				.style('font-family', 'Impact')
+				.style('fill', function(d, i) {
+					return fill(i);
+				})
+				.attr('text-anchor', 'middle')
+				.attr('font-size', 1)
+				.text(function(d) {
+					return d.text;
+				});
+
+			//Entering and existing words
+			cloud
+				.transition()
+				.duration(600)
+				.style('font-size', function(d) {
+					return d.size + 'px';
+				})
+				.attr('transform', function(d) {
+					return 'translate(' + [d.x, d.y] + ')rotate(' + d.rotate + ')';
+				})
+				.style('fill-opacity', 1);
+
+			//Exiting words
+			cloud.exit()
+				.transition()
+				.duration(200)
+				.style('fill-opacity', 1e-6)
+				.attr('font-size', 1)
+				.remove();
+		}
+
+
+		//Use the module pattern to encapsulate the visualisation code. We'll
+		// expose only the parts that need to be public.
+		return {
+
+			//Recompute the word cloud for a new set of words. This method will
+			// asycnhronously call draw when the layout has been computed.
+			//The outside world will need to call this function, so make it part
+			// of the wordCloud return value.
+			update: function(words) {
+				console.log('updating', width, height);
+				d3.layout.cloud().size([width, height])
+					.words(words)
+					.padding(5)
+					.rotate(function() {
+						return ~~(Math.random() * 2) * (90);
+					})
+					.font('Impact')
+					.fontSize(function(d) {
+						return d.size;
+					})
+					.on('end', draw)
+					.start();
+			},
+			remove: function() {
+				svg.remove()
+				svg = null
+				var plop = $('.word-cloud-svg')
+				console.log('plop',plop)
+				plop.attr('width', 0)
+				plop.attr('height', 0)
+			}
+		};
+	}
+
+	var words = [
+		'Change Management', 'Diseño Organizacional', 'Compensaciones',
+		'Agentes de Cambio', 'Lean', 'Aumento de productividad', 'Desempeño',
+		'Reclutamiento', 'Capacitación', 'Liderazgo', 'Talento', 'Bonos', 'Team building',
+		'Alineación de objetivos'
+	];
+
+	function getWords() {
+		var multiplier = width >= 1000
+			? 1
+			: width/1000
+		return words.map(function(d) {
+			return { text: d, size: 10 + Math.random() * (60*multiplier) };
+		});
+	}
+
+	var myWordCloud = wordCloud('#word-cloud');
+	var drawingTimeout;
+
+	function loopWordCloud() {
+		console.log('looping word cloud');
+		console.log('calling update');
+		myWordCloud.update(getWords());
+		drawingTimeout = setTimeout(function() {
+			loopWordCloud();
+		}, 5000);
+	}
+
+	function resizeDone() {
+		console.log('resize done');
+		width = window.screen.width - 30;
+		height = width * 0.45;
+		console.log('clearing drawing timeout');
+		clearTimeout(drawingTimeout);
+
+		// myWordCloud = wordCloud('#word-cloud');
+		// console.log('calling update');
+		// myWordCloud.update(getWords());
+
+
+		console.log('removing svg')
+		myWordCloud.remove()
+
+		requestAnimationFrame(function() {
+			console.log('creating new svg')
+			myWordCloud = wordCloud('#word-cloud');
+
+			console.log('restarting loop')
+			loopWordCloud();
+		})
+
+	}
+
+	var resizeThreshold;
+
+	window.onresize = function() {
+		console.log('resize event triggered');
+		clearTimeout(resizeThreshold);
+		resizeThreshold = setTimeout(function() {
+			requestAnimationFrame(resizeDone)
+		}, 500);
+	};
+
+	loopWordCloud();
 });
 
 export { bootstrapModal, bootstrapCarousel, bootstrapDropdown };
