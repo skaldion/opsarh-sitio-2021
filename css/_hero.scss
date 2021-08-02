@@ -43,8 +43,10 @@
     color: colors.$white;
   }
   .hero-message {
-    text-align: left;
     margin-bottom: 40px;
+    p {
+      display: inline-block;
+    }
   }
 
   @media (min-width: variables.$size-m) {
@@ -59,6 +61,27 @@
       max-width: 1000px;
       p {
         max-width: 550px;
+      }
+    }
+  }
+
+  &.index-hero-bg {
+    background-size: cover;
+    background-attachment: local;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("/images/opsarh_Hero_Home_Test7.jpg");
+    background-color: colors.$white;
+    background-blend-mode: darken;
+    color: colors.$blue-003;
+    text-align: center;
+    @media (min-width: variables.$size-l) {
+      .hero-message {
+        margin: 0 auto;
+        text-align: center;
+        p {
+          max-width: 400px;
+        }
       }
     }
   }
