@@ -36,10 +36,20 @@ href: '/servicios/reclutamiento'
 })
 %>
 
+<%- include('/side-image', {
+heading: 'Ventaja Competitiva',
+image: { src: '/images/building.webp', alt: 'Un vistazo hacia arriba de unos edificios al atardecer.' },
+features: [
+{ title: 'EN OPSARH', description: 'Estamos comprometidos a utilizar nuestras fortalezas para  atender de manera personalizada tus necesidades.' },
+],
+additionalClasses: 'skyblue-opsarh-bg',
+imgClasses: ""
+})
+%>
 
 <%- include('/features', {
-title: '¿Por qué escoger OPSARH?',
-description: 'Estos son algunos de nuestros principales diferenciadores que nos hacen resaltar sobre la competencia.',
+title: '¿Por qué elegir OPSARH?',
+description: '',
 features: [
 {
 image: { src: "/images/eficacia.svg", alt: "Resultados"},
@@ -47,11 +57,11 @@ heading: 'Resultados',
 subFeatures: ['Resultados a través de la gente']
 },{
 image: { src: "/images/eficiencia.svg", alt: "Comercio electronico"},
-heading: 'Estrategias',
+heading: 'Estrategia basada en Datos',
 subFeatures: ['Los datos son nuestra base para generar estrategias, toma de decisiones y resultados.']
 },{
 image: { src: "/images/a_medida.svg", alt: "Ambientes"},
-heading: 'Ambientes',
+heading: 'Gestión del cambio',
 subFeatures: ['Especialistas en ambientes disruptivos.']
 },{
 image: { src: "/images/agilidad.svg", alt: "Tecnologías"},
@@ -72,14 +82,14 @@ colClass: ''
 })
 %>
 
-<%- include('/side-image', {
-heading: 'Ventaja Competitiva',
-image: { src: '/images/building.webp', alt: 'Un vistazo hacia arriba de unos edificios al atardecer.' },
-features: [
-{ title: 'EN OPSARH', description: 'Estamos comprometidos a utilizar nuestras fortalezas para  atender de manera personalizada tus necesidades.' },
+<%- include('/banner', {
+mainText: 'Expertos en soluciones en Recursos Humanos',
+secondaryText: [
+'Conoce más sobre nosotros y nuestra trayectoria. Más de 15 años de experiencia como empresa en la industria nos respaldan.'
 ],
-additionalClasses: 'skyblue-opsarh-bg',
-imgClasses: ""
+ctaButtonText: 'Conoce más',
+additionalClasses: 'opsarh-bblue-bg',
+href: '/servicios/reclutamiento'
 })
 %>
 
