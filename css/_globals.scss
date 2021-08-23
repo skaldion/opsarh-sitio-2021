@@ -98,7 +98,17 @@ img {
 
 .grey-bg {
   background-color: #f8f9fa;
-  color: black;
+  color: colors.$blue-006;
+}
+
+.grid-alt-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/opsarh_serv.jpg");
+  background-color: colors.$softgray;
+  color: colors.$blue-006;
 }
 
 .city-bg {
