@@ -1,4 +1,6 @@
 @use "colors";
+@use "fonts";
+@use 'variables';
 
 body {
   background-color: colors.$grey;
@@ -7,6 +9,38 @@ body {
 
   &.modal-open {
     overflow: hidden;
+  }
+}
+
+h1 {
+  font-size: fonts.$hero-h1-size-mobile;
+  @media (min-width: variables.$size-m) {
+    font-size: fonts.$hero-h1-size;
+  }
+}
+
+h2 {
+  font-size: fonts.$hero-h2-size-mobile;
+  @media (min-width: variables.$size-m) {
+    font-size: fonts.$hero-h2-size;
+  }
+}
+
+h3 {
+  font-size: fonts.$hero-h3-size-mobile;
+  font-weight: bold;
+  @media (min-width: variables.$size-m) {
+    font-weight: normal;
+    font-size: fonts.$hero-h3-size;
+  }
+}
+
+h4 {
+  font-size: fonts.$hero-h4-size-mobile;
+  font-weight: bold;
+  @media (min-width: variables.$size-m) {
+    font-weight: normal;
+    font-size: fonts.$hero-h4-size;
   }
 }
 

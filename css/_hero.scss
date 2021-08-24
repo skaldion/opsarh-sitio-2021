@@ -5,11 +5,14 @@
 .hero {
   min-height: 475px;
   padding: 70px 0;
+  overflow: hidden;
   h1 {
-    font-size: fonts.$hero-h1-size;
-    line-height: 60px;
+    line-height: 40px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    @media (min-width: variables.$size-m) {
+      line-height: 60px;
+    }
   }
   p {
     font-size: 21px;

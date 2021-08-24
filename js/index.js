@@ -8,6 +8,7 @@ import bootstrapCollapse from '../node_modules/bootstrap/js/src/collapse';
 $(document).ready(function() {
 	var width = window.screen.width - 30;
 	var height = width * 0.45;
+	var colors = ['#39d0ff', '#00326d', '#2d76b2']
 
 	function getCanvasCenter() {
 		return `${width / 2},${height / 2}`;
@@ -19,7 +20,11 @@ $(document).ready(function() {
 	// Encapsulate the word cloud functionality
 	function wordCloud(selector) {
 
-		var fill = d3.scale.category20();
+		var fill = (index) => {
+			console.log(index, index%3, colors[index%3])
+			return colors[index%3]
+		};
+		// var fill = d3.scale.category20();
 
 		//Construct the word cloud's SVG element
 		var svg = d3
@@ -83,7 +88,6 @@ $(document).ready(function() {
 			//The outside world will need to call this function, so make it part
 			// of the wordCloud return value.
 			update: function(words) {
-				console.log('updating', width, height);
 				d3.layout.cloud().size([width, height])
 					.words(words)
 					.padding(5)
@@ -101,7 +105,6 @@ $(document).ready(function() {
 				svg.remove()
 				svg = null
 				var plop = $('.word-cloud-svg')
-				console.log('plop',plop)
 				plop.attr('width', 0)
 				plop.attr('height', 0)
 			}
@@ -128,8 +131,6 @@ $(document).ready(function() {
 	var drawingTimeout;
 
 	function loopWordCloud() {
-		console.log('looping word cloud');
-		console.log('calling update');
 		myWordCloud.update(getWords());
 		drawingTimeout = setTimeout(function() {
 			loopWordCloud();
@@ -137,25 +138,13 @@ $(document).ready(function() {
 	}
 
 	function resizeDone() {
-		console.log('resize done');
 		width = window.screen.width - 30;
 		height = width * 0.45;
-		console.log('clearing drawing timeout');
 		clearTimeout(drawingTimeout);
-
-		// myWordCloud = wordCloud('#word-cloud');
-		// console.log('calling update');
-		// myWordCloud.update(getWords());
-
-
-		console.log('removing svg')
 		myWordCloud.remove()
 
 		requestAnimationFrame(function() {
-			console.log('creating new svg')
 			myWordCloud = wordCloud('#word-cloud');
-
-			console.log('restarting loop')
 			loopWordCloud();
 		})
 
@@ -164,7 +153,6 @@ $(document).ready(function() {
 	var resizeThreshold;
 
 	window.onresize = function() {
-		console.log('resize event triggered');
 		clearTimeout(resizeThreshold);
 		resizeThreshold = setTimeout(function() {
 			requestAnimationFrame(resizeDone)
