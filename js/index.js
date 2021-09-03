@@ -6,6 +6,24 @@ import bootstrapDropdown from '../node_modules/bootstrap/js/src/dropdown';
 import bootstrapCollapse from '../node_modules/bootstrap/js/src/collapse';
 
 $(document).ready(function() {
+	formValidation()
+	startWordCloud()
+});
+
+const formValidation = () => {
+	$('.needs-validation').each(function() {
+		const form = $(this);
+		form.submit(function(event) {
+			if (form[0].checkValidity() === false) {
+				event.preventDefault()
+				event.stopPropagation()
+			}
+			form.addClass('was-validated')
+		})
+	})
+}
+
+const startWordCloud = () => {
 	var width = window.screen.width - 30;
 	var height = width * 0.45;
 	var colors = ['#39d0ff', '#00326d', '#2d76b2']
@@ -21,7 +39,6 @@ $(document).ready(function() {
 	function wordCloud(selector) {
 
 		var fill = (index) => {
-			console.log(index, index%3, colors[index%3])
 			return colors[index%3]
 		};
 		// var fill = d3.scale.category20();
@@ -160,6 +177,6 @@ $(document).ready(function() {
 	};
 
 	loopWordCloud();
-});
+}
 
 export { bootstrapModal, bootstrapCarousel, bootstrapDropdown };
