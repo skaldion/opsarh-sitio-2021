@@ -1,13 +1,17 @@
 <section class="hero <%- additionalClasses %>">
     <div class="container">
         <div class="hero-message">
-            <h1><%- mainText %></h1>
-            <% secondaryText.forEach((text) => { %>
-                <p><%- text %></p>
-            <% }); %>
+            <div class='hero-card'>
+                <h1><%- mainText %></h1>
+                <div>
+                    <% secondaryText.forEach((text) => { %>
+                        <p><%- text %></p>
+                    <% }); %>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contact-modal">
+                    <%- ctaButtonText %>
+                </button>
+            </div>
         </div>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contact-modal">
-            <%- ctaButtonText %>
-        </button>
     </div>
 </section>
