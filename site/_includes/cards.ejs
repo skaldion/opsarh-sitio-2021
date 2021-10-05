@@ -14,10 +14,12 @@
             <% if(data.href) { %> <a href='<%- data.href %>'> <% } %>
             <div class="card mb-4 box-shadow">
                 <img class="card-img-top" alt="<%- data.imgAlt %>" style="height: 225px; width: 100%; display: block;" src="<%- data.imgSrc %>">
-                <div class="card-body">
-                    <h4><%- data.title %></h4>
-                    <p class="card-text"><%- data.description %></p>
-                </div>
+                <% if (data.title && data.description) {%>
+                    <div class="card-body">
+                        <h4><%- data.title %></h4>
+                        <p class="card-text"><%- data.description %></p>
+                    </div>
+                <% } %>
             </div>
             <% if(data.href) { %> </a> <% } %>
         </div>
