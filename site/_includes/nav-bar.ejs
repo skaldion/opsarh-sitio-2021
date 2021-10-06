@@ -31,7 +31,7 @@
                     Servicios
                 </button>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <% collections.servicios.forEach( servicio => { %>
+                    <% collections.sortedServices.forEach( servicio => { %>
                         <a class="dropdown-item <%- ` ${page.url === servicio.url && 'active'}` %>" href="<%- servicio.url %>"><%- servicio.data.title %></a>
                     <% }); %>
                 </div>

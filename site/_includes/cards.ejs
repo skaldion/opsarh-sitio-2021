@@ -8,11 +8,11 @@
                 <div class='col'><p><%- secondaryText %></p></div>
             </div>
         <% } %>
-        <div class='row'>
+        <div class='row row-cols-1 row-cols-md-3'>
     <% cards.forEach(data => {%>
-        <div class='col-md-4'>
+        <div class='col mb-4'>
             <% if(data.href) { %> <a href='<%- data.href %>'> <% } %>
-            <div class="card mb-4 box-shadow">
+            <div class="card <%- stretchCards ? 'h-100' : '' %> mb-4 box-shadow">
                 <img class="card-img-top" alt="<%- data.imgAlt %>" style="height: 225px; width: 100%; display: block;" src="<%- data.imgSrc %>">
                 <% if (data.title && data.description) {%>
                     <div class="card-body">

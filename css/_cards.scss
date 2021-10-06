@@ -25,4 +25,14 @@
     }
   }
 
+  &.no-hover {
+    .card {
+      transition: none;
+      &:hover {
+        color: inherit;
+        background-color: white;
+        transform: none;
+      }
+    }
+  }
 }
