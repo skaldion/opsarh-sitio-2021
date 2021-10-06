@@ -270,3 +270,9 @@ img {
 #word-cloud {
   text-align: center;
 }
+
+@media (min-width: variables.$size-l) {
+  .w-lg-50 {
+    width: 50%;
+  }
+}
