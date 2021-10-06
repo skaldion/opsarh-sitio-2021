@@ -59,18 +59,24 @@
     }
   }
 
+  &.centered {
+    .hero-message {
+      margin: 0 auto 40px;
+    }
+  }
+
   @media (min-width: variables.$size-m) {
     .hero-message {
-      max-width: 550px;
+      width: 550px;
     }
   }
 
   @media (min-width: variables.$size-l) {
     padding: 100px 0;
     .hero-message {
-      max-width: 1000px;
+      width: 1000px;
       p {
-        max-width: 550px;
+        width: 550px;
       }
     }
   }
