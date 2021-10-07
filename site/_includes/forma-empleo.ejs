@@ -1,14 +1,14 @@
 <section class='empleo-section white-bg'>
 <div class="container">
-<form class='w-lg-50 py-5'>
+<form class='w-lg-50 py-5' name="opsarh-empleo" method="POST" data-netlify="true">
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="inputName4">Nombre Completo</label>
-            <input type="text" class="form-control" id="inputName4" placeholder="Nombre completo" required=''>
+            <input name="nombre-completo" type="text" class="form-control" id="inputName4" placeholder="Nombre completo" required=''>
         </div>
         <div class="form-group col-md-6">
             <label for="inputState">Escolaridad</label>
-            <select id="inputState" class="form-control">
+            <select name="escolaridad" id="inputState" class="form-control">
                 <option>Posgrado</option>
                 <option selected>Licenciatura</option>
                 <option>Bachillerato</option>
@@ -20,28 +20,28 @@
     <div class="form-row">
         <div class="form-group col-md-6">
                 <label for="tel">Teléfono <span class="text-muted">(Opcional)</span></label>
-                <input name='tel' type="tel" class="form-control" id="tel">
+                <input name='telefono' type="tel" class="form-control" id="tel">
             </div>
         <div class="form-group col-md-6">
             <label for="inputEmail4">Correo electrónico</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="e-mail" required=''>
+            <input name="e-mail" type="email" class="form-control" id="inputEmail4" placeholder="e-mail" required=''>
         </div>
     </div>
 
     <div class="form-group">
         <label for="inputVacante">Tipo de Vacante</label>
-        <input type="text" class="form-control" id="inputVacante" placeholder="Escriba a que quiere aplicar" required=''>
+        <input name="tipo-vacante" type="text" class="form-control" id="inputVacante" placeholder="Escriba a que quiere aplicar" required=''>
     </div>
     <div class="form-group">
         <label for="inputPerfil">Resumen de perfil</label>
-        <textarea name="perfil" class="form-control" id="inputPerfil" aria-describedby="perfil" placeholder="Escriba brevemente su perfil" required=''></textarea>
+        <textarea name="resumen-perfil" class="form-control" id="inputPerfil" aria-describedby="perfil" placeholder="Escriba brevemente su perfil" required=''></textarea>
     </div>
     <div class="custom-file">
-        <input type="file" class="custom-file-input" id="customFile">
+        <input name="archivo" type="file" class="custom-file-input" id="customFile">
         <label class="custom-file-label" for="customFile">Incluir archivo...<span class="text-muted">(Opcional)</span></label>
     </div>
     <div class="form-group">
-        <label for="inputMensaje">Mensaje <span class="text-muted">(Opcional)</span></label>
+        <label for="mensaje">Mensaje <span class="text-muted">(Opcional)</span></label>
         <textarea name='mensaje' class="form-control" id="mensaje" aria-describedby="mensaje"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
