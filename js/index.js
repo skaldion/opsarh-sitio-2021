@@ -8,6 +8,13 @@ import bootstrapCollapse from '../node_modules/bootstrap/js/src/collapse';
 $(document).ready(function() {
 	formValidation()
 	startWordCloud()
+	const fileInput = document.querySelector('.custom-file-input')
+
+	fileInput && fileInput.addEventListener('change',function(e){
+		var fileName = document.getElementById("customFile").files[0].name;
+		var nextSibling = e.target.nextElementSibling
+		nextSibling.innerText = fileName
+	})
 });
 
 const formValidation = () => {
