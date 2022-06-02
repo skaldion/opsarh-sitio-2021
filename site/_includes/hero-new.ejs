@@ -1,0 +1,14 @@
+<section class="hero <%- additionalClasses %>">
+    <div class="container">
+        <div class="hero-message">
+            <div class='hero-card'>
+                <h1><%- mainText %></h1>
+                <div>
+                    <% secondaryText.forEach((text) => { %>
+                        <p><%- text %></p>
+                    <% }); %>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
